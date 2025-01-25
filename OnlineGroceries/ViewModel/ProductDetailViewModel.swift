@@ -1,4 +1,4 @@
-import SwiftUI
+/*import SwiftUI
 
 class ProductDetailViewModel: ObservableObject
 {
@@ -101,4 +101,4 @@ class ProductDetailViewModel: ObservableObject
     }
     
     
-}
+}*/

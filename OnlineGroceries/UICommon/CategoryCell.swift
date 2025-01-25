@@ -1,4 +1,4 @@
-import SwiftUI
+/*import SwiftUI
 import SDWebImageSwiftUI
 
 struct CategoryCell: View {
@@ -38,4 +38,4 @@ struct CategoryCell_Previews: PreviewProvider {
                                              "image": "http://192.168.1.3:3001/img/type/202307261610181018aVOpgmY1W1.png",
                                              "color": "F8A44C"]))
     }
-}
+}*/

@@ -1,4 +1,4 @@
-import SwiftUI
+/*import SwiftUI
 
 class MainViewModel: ObservableObject {
     static var shared: MainViewModel = MainViewModel()
@@ -124,4 +124,4 @@ class MainViewModel: ObservableObject {
         self.isShowPassword = false
     }
     
-}
+}*/

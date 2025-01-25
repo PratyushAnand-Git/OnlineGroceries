@@ -1,6 +1,6 @@
 // Don't touch this file - taken from the postman
 
-import SwiftUI
+/*import SwiftUI
 
 struct ProductModel:  Identifiable, Equatable {
     var id: Int = 0
@@ -59,3 +59,4 @@ struct ProductModel:  Identifiable, Equatable {
         return lhs.id == rhs.id
     }
 }
+*/

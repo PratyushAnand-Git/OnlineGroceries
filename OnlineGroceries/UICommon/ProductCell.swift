@@ -5,7 +5,7 @@
 //  Created by CodeForAny on 03/08/23.
 //
 
-import SwiftUI
+/*import SwiftUI
 import SDWebImageSwiftUI
 
 struct ProductCell: View {
@@ -99,4 +99,4 @@ struct ProductCell_Previews: PreviewProvider {
             
         }
     }
-}
+}*/
