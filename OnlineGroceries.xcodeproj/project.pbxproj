@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F9E41732D4D026400A38933 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9E41722D4D026400A38933 /* Launch Screen.storyboard */; };
 		3FF049642D44EFCB00A44516 /* OnlineGroceriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF049632D44EFCB00A44516 /* OnlineGroceriesApp.swift */; };
 		3FF049662D44EFCB00A44516 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF049652D44EFCB00A44516 /* WelcomeView.swift */; };
 		3FF049682D44EFCC00A44516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF049672D44EFCC00A44516 /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F9E41722D4D026400A38933 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		3FF049602D44EFCB00A44516 /* OnlineGroceries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineGroceries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF049632D44EFCB00A44516 /* OnlineGroceriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGroceriesApp.swift; sourceTree = "<group>"; };
 		3FF049652D44EFCB00A44516 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -147,10 +149,11 @@
 			children = (
 				3FF049FC2D44F6AF00A44516 /* ViewModel */,
 				3FF049F12D44F68900A44516 /* Model */,
+				3FF049692D44EFCC00A44516 /* Preview Content */,
+				3F9E41722D4D026400A38933 /* Launch Screen.storyboard */,
 				3FF049D82D44F54200A44516 /* UICommon */,
 				3FF049632D44EFCB00A44516 /* OnlineGroceriesApp.swift */,
 				3FF049672D44EFCC00A44516 /* Assets.xcassets */,
-				3FF049692D44EFCC00A44516 /* Preview Content */,
 			);
 			path = OnlineGroceries;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F9E41732D4D026400A38933 /* Launch Screen.storyboard in Resources */,
 				3FF0496B2D44EFCC00A44516 /* Preview Assets.xcassets in Resources */,
 				3FF049682D44EFCC00A44516 /* Assets.xcassets in Resources */,
 			);
