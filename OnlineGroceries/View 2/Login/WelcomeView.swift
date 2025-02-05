@@ -1,16 +1,4 @@
-//
-//  ContentView.swift
-//  OnlineGroceries
-//
-//  Created by student on 25/01/25.
-//
 
-//
-//  ContentView.swift
-//  FoodDelivery
-//
-//  Created by student on 07/01/25.
-//
 
 import SwiftUI
 

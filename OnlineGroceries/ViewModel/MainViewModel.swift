@@ -1,4 +1,10 @@
-/*import SwiftUI
+//
+//  MainViewModel.swift
+//  OnlineGroceries
+//
+//  Created by student on 05/02/25.
+//
+import SwiftUI
 
 class MainViewModel: ObservableObject {
     static var shared: MainViewModel = MainViewModel()
@@ -124,4 +130,4 @@ class MainViewModel: ObservableObject {
         self.isShowPassword = false
     }
     
-}*/
+}

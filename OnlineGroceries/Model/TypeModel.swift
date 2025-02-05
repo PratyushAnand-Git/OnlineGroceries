@@ -1,4 +1,11 @@
- import SwiftUI
+//
+//  TypeModel.swift
+//  OnlineGroceries
+//
+//  Created by student on 05/02/25.
+//
+
+import SwiftUI
 
 struct TypeModel: Identifiable, Equatable {
     

@@ -1,4 +1,9 @@
-// Don't touch this file - taken from the postman
+//
+//  UserModel.swift
+//  OnlineGroceries
+//
+//  Created by student on 05/02/25.
+//
 
 import SwiftUI
 
@@ -27,4 +32,3 @@ struct UserModel: Identifiable, Equatable {
         return lhs.id == rhs.id
     }
 }
-

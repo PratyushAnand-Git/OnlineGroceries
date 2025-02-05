@@ -1,4 +1,11 @@
-/*import SwiftUI
+//
+//  SwiftUIView.swift
+//  OnlineGroceries
+//
+//  Created by student on 04/02/25.
+//
+
+import SwiftUI
 
 class HomeViewModel: ObservableObject
 {
@@ -6,7 +13,6 @@ class HomeViewModel: ObservableObject
     
     @Published var selectTab: Int = 0
     @Published var txtSearch: String = ""
-    
     
     @Published var showError = false
     @Published var errorMessage = ""
@@ -64,4 +70,4 @@ class HomeViewModel: ObservableObject
         }
     }
     
-}*/
+}

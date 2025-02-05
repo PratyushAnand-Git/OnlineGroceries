@@ -1,16 +1,4 @@
-//
-//  LogInView.swift
-//  OnlineGroceries
-//
-//  Created by student on 25/01/25.
-//
 
-//
-//  NumberView.swift
-//  FoodDelivery
-//
-//  Created by student on 21/01/25.
-//
 import SwiftUI
 
 struct LoginView: View {
@@ -80,9 +68,14 @@ struct LoginView: View {
                     .foregroundColor(.white.opacity(0.9))
                     .background(.green)
                 .cornerRadius(18)
+                .padding(.bottom, 20)
+                .alert(isPresented: $showError){
+                    Alert(title: Text("Error"), message: Text("Server not connected"), dismissButton: .default(Text("OK")))}
+                
+                
                 
                 //Text(" ")
-                    .padding(.bottom, 20)
+                    
     
                     HStack {
                         Text("Don't have an account?")
@@ -129,8 +122,7 @@ struct LoginView: View {
                         .frame(width:40, height: 40)
                         .background(.white)
                         .cornerRadius(14)
-                        .padding(.top,600)
-                }
+                        .padding(.top,600)}
             }
             */
             // Back Button
@@ -151,9 +143,7 @@ struct LoginView: View {
             .padding(.top, .topInsets)
             .padding(.horizontal, 20)
         }
-        .alert(isPresented: $showError) {
-            Alert(title: Text(Globs.AppName), message: Text(errorMessage), dismissButton: .default(Text("Ok")))
-        }
+      
         .background(Color.white)
         .navigationTitle("")
         .navigationBarBackButtonHidden(true)
