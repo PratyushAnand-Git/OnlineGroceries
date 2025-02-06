@@ -137,5 +137,6 @@ struct ProductModel: Identifiable, Equatable {
     static func == (lhs: ProductModel, rhs: ProductModel) -> Bool {
         return lhs.id == rhs.id && lhs.prodId == rhs.prodId && lhs.catId == rhs.catId
     }
+    
+    
 }
-

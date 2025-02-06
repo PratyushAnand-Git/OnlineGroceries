@@ -10,11 +10,12 @@ import SwiftUI
 struct MainTabView: View {
     
     @StateObject var homeVM = HomeViewModel.shared
+    @State private var searchText = ""
     
     var body: some View {
         ZStack{
             
-            if(homeVM.selectTab == 0) {
+            /*if(homeVM.selectTab == 0) {
                // HomeView()
             }else if(homeVM.selectTab == 1) {
                 //ExploreView()
@@ -25,8 +26,38 @@ struct MainTabView: View {
             }else if(homeVM.selectTab == 4) {
                // AccountView()
             }
-            
+            */
             VStack{
+                    
+                    
+                    Image("color_logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 35,height: 35)
+                        .padding(.top,60)
+                
+                    
+                    HStack{
+                        Image("search")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 20,height: 20)
+                            .padding(.trailing,5)
+                        
+                        VStack{
+                            TextField("Search here", text: $searchText)
+                                .padding()
+                                .textFieldStyle(RoundedBorderTextFieldStyle()) // Rounded border style
+                                .padding([.leading, .trailing], 20)
+                                .foregroundStyle(Color.blue)
+                                .cornerRadius(40)
+                            
+                            Spacer() // To push content down if necessary
+                            
+                            Text("Search Text: \(searchText)")
+                                .padding()
+                        }
+                    }
                 
                 Spacer()
                 

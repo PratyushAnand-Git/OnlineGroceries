@@ -1,4 +1,41 @@
 import SwiftUI
+import Foundation
+
+class ServiceCall {
+    static func post(parameter: [String: Any], path: String, success: @escaping (Any) -> Void, failure: @escaping (Error?) -> Void) {
+        guard let url = URL(string: path) else {
+            failure(nil)
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = try? JSONSerialization.data(withJSONObject: parameter, options: [])
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                failure(error)
+                return
+            }
+            
+            guard let data = data else {
+                failure(nil)
+                return
+            }
+            
+            do {
+                let responseObj = try JSONSerialization.jsonObject(with: data, options: [])
+                success(responseObj)
+            } catch {
+                failure(error)
+            }
+        }
+        
+        task.resume()
+    }
+}
+
 
 class MainViewModel: ObservableObject {
     static var shared: MainViewModel = MainViewModel()
