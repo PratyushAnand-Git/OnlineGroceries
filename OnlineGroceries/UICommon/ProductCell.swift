@@ -16,7 +16,7 @@ struct ProductCell: View {
     
     var body: some View {
         NavigationLink {
-            ProductDetailView(detailVM:  ProductDetailViewModel(prodObj: pObj) )
+            //ProductDetailView(detailVM:  ProductDetailViewModel(prodObj: pObj) )
         } label: {
             VStack{
                 
@@ -98,5 +98,49 @@ struct ProductCell_Previews: PreviewProvider {
         ])) {
             
         }
+    }
+}
+
+*//*struct ProductCell: View {
+    let imageName: String
+    let title: String
+    let quantity: String
+    let price: String
+    
+    var body: some view{
+        VStack(alignment: .leading){
+            Image(imageName)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 100, height: 100)
+                .cornerRadius(10)
+            Text(title)
+                .font(.caption)
+                .fontWeight(.bold)
+            Text(quantity)
+                .font(.caption)
+                .foregroundColor(.gray)
+            HStack{
+                Text(price)
+                    .font(.subheadline)
+                    .fontWeight(.bold)
+                Spacer()
+                Button(action: {}) {
+                    Image(systemName: "plus.circle.fill")
+                        .foregroundColor(.green)
+                }
+            }
+        }
+        .padding()
+        .background(Color.white)
+        .cornerRadius(10)
+        .shadow(radius: 5)
+    }
+}
+struct ProductCell_Previews: PreviewProvider {
+    static var previews: some view {
+        ProductCell(imageName: "bananas", title: "Organic Bananas", quantity: "7pcs, Price/g", price: "$4.99")
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }*/

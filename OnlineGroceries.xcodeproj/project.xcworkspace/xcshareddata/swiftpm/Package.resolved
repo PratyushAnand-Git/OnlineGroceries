@@ -1,5 +1,5 @@
 {
-  "originHash" : "dfafabe9eb2f82df194905da7bcf8588b98ed393efaa5134e1fcb892e06d86c8",
+  "originHash" : "dd0ffce505a95a0b20895f89bc3fc348c0007b9a239fc3ac842439e12a3f4996",
   "pins" : [
     {
       "identity" : "iphonenumberfield",
@@ -17,6 +17,24 @@
       "state" : {
         "revision" : "c107075aa8d394be7aced273a46e944afe8b321b",
         "version" : "3.8.0"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "10d06f6a33bafae8c164fbfd1f03391f6d4692b3",
+        "version" : "5.20.0"
+      }
+    },
+    {
+      "identity" : "sdwebimageswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImageSwiftUI",
+      "state" : {
+        "revision" : "451c6dfd5ecec2cf626d1d9ca81c2d4a60355172",
+        "version" : "3.1.3"
       }
     }
   ],

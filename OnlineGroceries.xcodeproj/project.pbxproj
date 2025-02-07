@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F9E41732D4D026400A38933 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9E41722D4D026400A38933 /* Launch Screen.storyboard */; };
+		3FDB2D732D561FD600AE8B72 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3FDB2D722D561FD600AE8B72 /* SDWebImageSwiftUI */; };
 		3FF049642D44EFCB00A44516 /* OnlineGroceriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF049632D44EFCB00A44516 /* OnlineGroceriesApp.swift */; };
 		3FF049662D44EFCB00A44516 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF049652D44EFCB00A44516 /* WelcomeView.swift */; };
 		3FF049682D44EFCC00A44516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF049672D44EFCC00A44516 /* Assets.xcassets */; };
@@ -111,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FDB2D732D561FD600AE8B72 /* SDWebImageSwiftUI in Frameworks */,
 				3FF04A0B2D44F8D100A44516 /* iPhoneNumberField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +258,7 @@
 			name = OnlineGroceries;
 			packageProductDependencies = (
 				3FF04A0A2D44F8D100A44516 /* iPhoneNumberField */,
+				3FDB2D722D561FD600AE8B72 /* SDWebImageSwiftUI */,
 			);
 			productName = OnlineGroceries;
 			productReference = 3FF049602D44EFCB00A44516 /* OnlineGroceries.app */;
@@ -330,6 +333,7 @@
 			mainGroup = 3FF049572D44EFCB00A44516;
 			packageReferences = (
 				3FF04A092D44F8D100A44516 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */,
+				3FDB2D712D561FD600AE8B72 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			preferredProjectObjectVersion = 56;
 			productRefGroup = 3FF049612D44EFCB00A44516 /* Products */;
@@ -717,6 +721,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3FDB2D712D561FD600AE8B72 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
 		3FF04A092D44F8D100A44516 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/MojtabaHs/iPhoneNumberField";
@@ -728,6 +740,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3FDB2D722D561FD600AE8B72 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FDB2D712D561FD600AE8B72 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
 		3FF04A0A2D44F8D100A44516 /* iPhoneNumberField */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3FF04A092D44F8D100A44516 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */;
