@@ -8,6 +8,28 @@
 import SwiftUI
 
 struct MainTabView: View {
+    /*typealias Body = <#type#>
+     
+     typealias Body = <#type#>
+     
+     typealias Body = <#type#>
+     
+     typealias Body = <#type#>
+     
+     typealias Body = <#type#>
+     
+     typealias Body = <#type#>
+     
+     typealias Body = <#type#>
+     
+     typealias Body = <#type#>
+     
+     typealias Body = <#type#>
+     
+     typealias Body = <#type#>
+     
+     typealias Body = <#type#>*/
+     
     
     @StateObject var homeVM = HomeViewModel.shared
     @State private var searchText = ""
@@ -15,8 +37,8 @@ struct MainTabView: View {
     var body: some View {
         ZStack{
             
-            /*if(homeVM.selectTab == 0) {
-               // HomeView()
+            if(homeVM.selectTab == 0) {
+                // HomeView()
             }else if(homeVM.selectTab == 1) {
                 //ExploreView()
             }else if(homeVM.selectTab == 2) {
@@ -24,171 +46,815 @@ struct MainTabView: View {
             }else if(homeVM.selectTab == 3) {
                 //FavouriteView()
             }else if(homeVM.selectTab == 4) {
-               // AccountView()
+                // AccountView()
             }
-            */
+            
             VStack{
-                    
-                    
-                    Image("color_logo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 35,height: 35)
-                        .padding(.top,60)
+                
+                
+                Image("color_logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 35,height: 35)
+                    .padding(.top,60)
                 
                 HStack{
                     Spacer()
                     Image("location")
+                        .resizable()
                         .scaledToFit()
-                        .frame(width: 10, height: 10)
+                        .frame(width: 25, height: 25)
                         .padding(.trailing,5)
+                    
+                    
                     Text("Dhaka, Banassre")
                         .fontWeight(.medium)
                         .font(.customfont(.semibold, fontSize: 18))
-                        //.foregroundColor(.primaryText)
-                        //.frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                        //.padding(.bottom, 4)
                     Spacer()
                     Image("systemName: ")
                 }.multilineTextAlignment(.center)
-                   // .scaledToFit()
-                    //.frame(width:50) //  min(100, UIScreen.main.bounds.width * 0.3)Dynamically scales with screen size
                     .padding(.bottom, .screenWidth * 0.1)
                 
                 SearchTextField(searchText: $searchText, placeholder: "Search Store")
                     .padding(.leading, 10)
                     .padding(.trailing, 10)
-                    
-                Image("banner_top")
-                    .resizable()
-                    .scaledToFit()
-                    .padding(.leading, 10)
-                    .padding(.trailing, 10)
-                    
-                //Spacer()
                 
-                HStack{
-                    
-                    Text("Exclusive Offer")
-                        .font(.customfont(.bold, fontSize: 28))
+                ScrollView{
+                    Image("banner_top")
+                        .resizable()
+                        .scaledToFit()
                         .padding(.leading, 10)
-                        .multilineTextAlignment(.leading)
-                    Spacer()
+                        .padding(.trailing, 10)
                     
-                    NavigationLink{
-                        //
-                    }label: {
-                        Text("See all")
-                            //.font(.customfont(.semibold, fontSize: 18))
-                            .foregroundColor(.green)
-                            .padding(.trailing, 10)
-                           // .multilineTextAlignment(.center)
-                           // .frame( minWidth: 0, maxWidth: .infinity, minHeight: 60, maxHeight: 60 )
-                           // .background(Color(hex: "5383EC"))
-                            //.cornerRadius()
-                    }
-                    
-                }
-                ZStack{
-                    RoundedRectangle(cornerRadius: 25)
-                        .fill(Color.black.opacity(0.3))
-                        .frame(width: 152, height: 252)
-                        //.overlay(Text("RoundedRectangle")
-                            //.foregroundColor(.black)
-                            //.font(.title))
-                    RoundedRectangle(cornerRadius: 25)
-                        .fill(Color.white)
-                        .frame(width: 150, height: 250)
-                        .overlay(
-                            VStack{
-                                Image("banana")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .padding(.leading,25)
-                                    .padding(.trailing, 25)
-                                    .padding(.bottom,100)
-                                Text("Organic Bananas")
-                                    .lineLimit(1)
-                                    .font(.customfont(.bold, fontSize: 17.49))
-                                    .foregroundColor(.black)
-                                    .fontWeight(.bold)
-                                    .padding(.leading,7)
-                                    .padding(.trailing, 7)
-                                    .font(.title)
+                    VStack{
+                        HStack{
                             
-                                Text("7pcs, Price/g")
-                                    .font(.customfont(.semibold, fontSize: 12))
-                                    .padding(.trailing,57)
-                                    .foregroundColor(.black.opacity(0.5))
+                            Text("Exclusive Offer")
+                                .font(.customfont(.bold, fontSize: 28))
+                                .padding(.leading, 10)
+                                .multilineTextAlignment(.leading)
+                            Spacer()
+                            
+                            NavigationLink{
+                                //
+                            }label: {
+                                Text("See all")
+                                    .foregroundColor(.green)
+                                    .padding(.trailing, 10)
+                            }
+                            
+                        }
+                        ScrollView(.horizontal){
+                            HStack{
                                 Spacer()
-                                HStack{
-                                    Text("$4.99")
-                                        .fontWeight(.bold)
-                                        .font(.customfont(.bold, fontSize: 17.49))
-                                        .padding(.trailing,80)
-                                        .lineLimit(1)
-                                    ZStack{
-                                        RoundedRectangle(cornerRadius: 12)
-                                            .fill(Color.green)
-                                            .frame(width: 35, height: 35)
-                                            //.overlay(
+                                
+                                ZStack{
+                                    
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .fill(Color.black.opacity(0.3))
+                                        .frame(width: 152, height: 227)
+                                    
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .fill(Color.white)
+                                        .frame(width: 150, height: 225)
+                                        .overlay(
+                                            VStack{Spacer()
+                                                Image("banana")
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .padding(.leading,25)
+                                                    .padding(.trailing, 25)
+                                                    .padding(.bottom,10)
+                                                Text("Organic Bananas")
+                                                    .lineLimit(1)
+                                                    .font(.customfont(.bold, fontSize: 17.49))
+                                                    .foregroundColor(.black)
+                                                    .fontWeight(.bold)
+                                                    .padding(.leading,7)
+                                                    .padding(.trailing, 7)
+                                                    .font(.title)
+                                                
+                                                Text("7pcs, Price/g")
+                                                    .font(.customfont(.semibold, fontSize: 12))
+                                                    .padding(.trailing,57)
+                                                    .foregroundColor(.black.opacity(0.5))
+                                                Spacer()
+                                                HStack{
+                                                    Text("$4.99")
+                                                        .fontWeight(.bold)
+                                                        .font(.customfont(.bold, fontSize: 17.49))
+                                                        .padding(.leading,10)
+                                                        .lineLimit(1)
+                                                    Spacer()
+                                                    ZStack{
+                                                        RoundedRectangle(cornerRadius: 12)
+                                                            .fill(Color.green)
+                                                            .frame(width: 35, height: 35)
+                                                        //.overlay(
+                                                        
+                                                        NavigationLink{
+                                                            //
+                                                        }label: {
+                                                            Image("add_btn")
+                                                                .resizable()
+                                                                .scaledToFit()
+                                                                .frame(width:15, height:15)
+                                                        }
+                                                    }.padding(.leading,2)
+                                                        .padding(.trailing, 11)
+                                                }.padding(.bottom,15)
+                                            }
+                                        )
+                                    
+                                }
+                                ZStack{
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .fill(Color.black.opacity(0.3))
+                                        .frame(width: 152, height: 227)
+                                    
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .fill(Color.white)
+                                        .frame(width: 150, height: 225)
+                                        .overlay(
+                                            VStack{Spacer()
+                                                Image("apple_red")
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .padding(.leading,25)
+                                                    .padding(.trailing, 25)
+                                                    .padding(.bottom,10)
+                                                Text("Red Apple")
+                                                    .lineLimit(1)
+                                                    .font(.customfont(.bold, fontSize: 17.49))
+                                                    .foregroundColor(.black)
+                                                    .fontWeight(.bold)
+                                                    .padding(.leading,7)
+                                                    .padding(.trailing, 7)
+                                                    .font(.title)
+                                                    .padding(.top,23)
+                                                
+                                                Text("1kg, Price/g")
+                                                    .font(.customfont(.semibold, fontSize: 12))
+                                                    .padding(.trailing,57)
+                                                    .foregroundColor(.black.opacity(0.5))
+                                                Spacer()
+                                                HStack{
+                                                    Text("$4.99")
+                                                        .fontWeight(.bold)
+                                                        .font(.customfont(.bold, fontSize: 17.49))
+                                                        .padding(.leading,10)
+                                                        .lineLimit(1)
+                                                    Spacer()
+                                                    ZStack{
+                                                        RoundedRectangle(cornerRadius: 12)
+                                                            .fill(Color.green)
+                                                            .frame(width: 35, height: 35)
+                                                        //.overlay(
+                                                        
+                                                        NavigationLink{
+                                                            //
+                                                        }label: {
+                                                            Image("add_btn")
+                                                                .resizable()
+                                                                .scaledToFit()
+                                                                .frame(width:15, height:15)
+                                                        }
+                                                    }.padding(.leading,2)
+                                                        .padding(.trailing, 11)
+                                                }.padding(.bottom,15)
+                                            }
+                                        )
+                                    //.padding()
+                                }
+                                ZStack{
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .fill(Color.black.opacity(0.3))
+                                        .frame(width: 152, height: 227)
+                                    
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .fill(Color.white)
+                                        .frame(width: 150, height: 225)
+                                        .overlay(
+                                            VStack{Spacer()
+                                                Image("banana")
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .padding(.leading,25)
+                                                    .padding(.trailing, 25)
+                                                    .padding(.bottom,10)
+                                                Text("Organic Bananas")
+                                                    .lineLimit(1)
+                                                    .font(.customfont(.bold, fontSize: 17.49))
+                                                    .foregroundColor(.black)
+                                                    .fontWeight(.bold)
+                                                    .padding(.leading,7)
+                                                    .padding(.trailing, 7)
+                                                    .font(.title)
+                                                
+                                                Text("7pcs, Price/g")
+                                                    .font(.customfont(.semibold, fontSize: 12))
+                                                    .padding(.trailing,57)
+                                                    .foregroundColor(.black.opacity(0.5))
+                                                Spacer()
+                                                HStack{
+                                                    Text("$4.99")
+                                                        .fontWeight(.bold)
+                                                        .font(.customfont(.bold, fontSize: 17.49))
+                                                        .padding(.leading,10)
+                                                        .lineLimit(1)
+                                                    Spacer()
+                                                    ZStack{
+                                                        RoundedRectangle(cornerRadius: 12)
+                                                            .fill(Color.green)
+                                                            .frame(width: 35, height: 35)
+                                                        //.overlay(
+                                                        
+                                                        NavigationLink{
+                                                            //
+                                                        }label: {
+                                                            Image("add_btn")
+                                                                .resizable()
+                                                                .scaledToFit()
+                                                                .frame(width:15, height:15)
+                                                        }
+                                                    }.padding(.leading,2)
+                                                        .padding(.trailing, 11)
+                                                }.padding(.bottom,15)
+                                            }
+                                        )
+                                    //.padding()
+                                }
+                            }//HStack ends
+                        }//ScrollView ends
+                        
+                        Spacer()
+                        
+                        HStack{
+                            
+                            Text("Best Selling")
+                                .font(.customfont(.bold, fontSize: 23))
+                                .padding(.leading, 10)
+                                .multilineTextAlignment(.leading)
+                            Spacer()
+                            
+                            NavigationLink{
+                                //
+                            }label: {
+                                Text("See all")
+                                    .foregroundColor(.green)
+                                    .padding(.trailing, 10)
+                            }
+                            
+                        }
+                        ScrollView(.horizontal){
+                            HStack{
+                                Spacer()
+                                
+                                ZStack{
+                                    
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .fill(Color.black.opacity(0.3))
+                                        .frame(width: 152, height: 227)
+                                   
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .fill(Color.white)
+                                        .frame(width: 150, height: 225)
+                                        .overlay(
+                                            VStack{Spacer()
+                                                Image("bell_pepper_red")
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .padding(.leading,25)
+                                                    .padding(.trailing, 25)
+                                                    .padding(.bottom,10)
+                                                
+                                                Text("Bell Pepper Red")
+                                                    .lineLimit(1)
+                                                    .font(.customfont(.bold, fontSize: 17.49))
+                                                    .foregroundColor(.black)
+                                                    .fontWeight(.bold)
+                                                    .padding(.leading,7)
+                                                    .padding(.trailing, 7)
+                                                    .font(.title)
+                                                
+                                                Text("1kg, Price/g")
+                                                    .font(.customfont(.semibold, fontSize: 12))
+                                                    .padding(.trailing,57)
+                                                    .foregroundColor(.black.opacity(0.5))
+                                                Spacer()
+                                                HStack{
+                                                    Text("$4.99")
+                                                        .fontWeight(.bold)
+                                                        .font(.customfont(.bold, fontSize: 17.49))
+                                                        .padding(.leading,10)
+                                                        .lineLimit(1)
+                                                    Spacer()
+                                                    ZStack{
+                                                        RoundedRectangle(cornerRadius: 12)
+                                                            .fill(Color.green)
+                                                            .frame(width: 35, height: 35)
+                                                        //.overlay(
+                                                        
+                                                        NavigationLink{
+                                                            //
+                                                        }label: {
+                                                            Image("add_btn")
+                                                                .resizable()
+                                                                .scaledToFit()
+                                                                .frame(width:15, height:15)
+                                                        }
+                                                    }.padding(.leading,2)
+                                                        .padding(.trailing, 11)
+                                                }.padding(.bottom,15)
+                                            }
+                                        )
+                                    
+                                }
+                                ZStack{
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .fill(Color.black.opacity(0.3))
+                                        .frame(width: 152, height: 227)
+                                    
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .fill(Color.white)
+                                        .frame(width: 150, height: 225)
+                                        .overlay(
+                                            VStack{
+                                                
+                                                Image("ginger")
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .padding(.leading,25)
+                                                    .padding(.trailing, 25)
+                                                    .padding(.top,20)
+                                                
+                                                Text("Ginger")
+                                                    .lineLimit(1)
+                                                    .font(.customfont(.bold, fontSize: 17.49))
+                                                    .foregroundColor(.black)
+                                                    .fontWeight(.bold)
+                                                    .padding(.leading,7)
+                                                    .padding(.trailing, 7)
+                                                    .font(.title)
+                                                    .padding(.top,4)
+                                                
+                                                Text("250gm, Price/g")
+                                                    .font(.customfont(.semibold, fontSize: 12))
+                                                    .padding(.trailing,57)
+                                                    .foregroundColor(.black.opacity(0.5))
+                                                Spacer()
+                                                HStack{
+                                                    Text("$4.99")
+                                                        .fontWeight(.bold)
+                                                        .font(.customfont(.bold, fontSize: 17.49))
+                                                        .padding(.leading,10)
+                                                        .lineLimit(1)
+                                                    Spacer()
+                                                    ZStack{
+                                                        RoundedRectangle(cornerRadius: 12)
+                                                            .fill(Color.green)
+                                                            .frame(width: 35, height: 35)
+                                                        //.overlay(
+                                                        
+                                                        NavigationLink{
+                                                            //
+                                                        }label: {
+                                                            Image("add_btn")
+                                                                .resizable()
+                                                                .scaledToFit()
+                                                                .frame(width:15, height:15)
+                                                        }
+                                                    }.padding(.leading,2)
+                                                        .padding(.trailing, 11)
+                                                }.padding(.bottom,15)
+                                            }
+                                        )
+                                    //.padding()
+                                }
+                                ZStack{
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .fill(Color.black.opacity(0.3))
+                                        .frame(width: 152, height: 227)
+                                    
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .fill(Color.white)
+                                        .frame(width: 150, height: 225)
+                                        .overlay(
+                                            VStack{Spacer()
+                                                Image("banana")
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .padding(.leading,25)
+                                                    .padding(.trailing, 25)
+                                                    .padding(.bottom,10)
+                                                Text("Organic Bananas")
+                                                    .lineLimit(1)
+                                                    .font(.customfont(.bold, fontSize: 17.49))
+                                                    .foregroundColor(.black)
+                                                    .fontWeight(.bold)
+                                                    .padding(.leading,7)
+                                                    .padding(.trailing, 7)
+                                                    .font(.title)
+                                                
+                                                Text("7pcs, Price/g")
+                                                    .font(.customfont(.semibold, fontSize: 12))
+                                                    .padding(.trailing,57)
+                                                    .foregroundColor(.black.opacity(0.5))
+                                                Spacer()
+                                                HStack{
+                                                    Text("$4.99")
+                                                        .fontWeight(.bold)
+                                                        .font(.customfont(.bold, fontSize: 17.49))
+                                                        .padding(.leading,10)
+                                                        .lineLimit(1)
+                                                    Spacer()
+                                                    ZStack{
+                                                        RoundedRectangle(cornerRadius: 12)
+                                                            .fill(Color.green)
+                                                            .frame(width: 35, height: 35)
+                                                        //.overlay(
+                                                        
+                                                        NavigationLink{
+                                                            //
+                                                        }label: {
+                                                            Image("add_btn")
+                                                                .resizable()
+                                                                .scaledToFit()
+                                                                .frame(width:15, height:15)
+                                                        }
+                                                    }.padding(.leading,2)
+                                                        .padding(.trailing, 11)
+                                                }.padding(.bottom,15)
+                                            }
+                                        )
+                                    //.padding()
+                                }
+                            }//last HStack ends
+                            
+                        }//ScrollView ends
+                    }
+                    HStack{
+                        
+                        Text("Groceries")
+                            .font(.customfont(.bold, fontSize: 28))
+                            .padding(.leading, 10)
+                            .multilineTextAlignment(.leading)
+                        Spacer()
+                        
+                        NavigationLink{
+                            //
+                        }label: {
+                            Text("See all")
+                           
+                                .foregroundColor(.green)
+                                .padding(.trailing, 10)
+                           
+                        }}
+                    ScrollView(.horizontal){
+                        HStack{
+                            RoundedRectangle(cornerRadius: 25)
+                                .fill(Color.orange.opacity(0.1))
+                                .frame(width: 227, height: 110)
+                                .overlay(
+                                    HStack{
+                                        Image("pulses")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 225, height: 90)
                                         
-                                        NavigationLink{
-                                            //
-                                        }label: {
-                                            Image("add_btn")
+                                        Text("Pulses")
+                                            .font(.customfont(.bold, fontSize: 17.49))
+                                            .foregroundColor(.black)
+                                            .fontWeight(.bold)
+                                       
+                                        Spacer()
+                                    })
+                            
+                            //
+                            
+                            RoundedRectangle(cornerRadius: 25)
+                                .fill(Color.green.opacity(0.1))
+                                .frame(width: 227, height: 110)
+                                .overlay(
+                                    HStack{
+                                        Image("rice")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 225, height: 90)
+                                            .padding(.leading)
+                                        
+                                        Text("Rice")
+                                            .font(.customfont(.bold, fontSize: 17.49))
+                                            .foregroundColor(.black)
+                                            .fontWeight(.bold)
+                                        
+                                        
+                                        Spacer()
+                                    })
+                            
+                        }}
+                    
+                    
+                    
+                    
+                    ScrollView(.horizontal){
+                        HStack{
+                            Spacer()
+                            
+                            ZStack{
+                                
+                                RoundedRectangle(cornerRadius: 25)
+                                    .fill(Color.black.opacity(0.3))
+                                    .frame(width: 152, height: 227)
+                                //.overlay(Text("RoundedRectangle")
+                                //.foregroundColor(.black)
+                                //.font(.title))
+                                RoundedRectangle(cornerRadius: 25)
+                                    .fill(Color.white)
+                                    .frame(width: 150, height: 225)
+                                    .overlay(
+                                        VStack{Spacer()
+                                            Image("beef_bone")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width:15, height:15)
-                                                //.background(Color.green)
-                                                //.cornerRadius(12)
+                                                .padding(.leading,25)
+                                                .padding(.trailing, 25)
+                                                .padding(.bottom,10)
                                             
-                                        }}.padding(.leading,7)
-                                        .padding(.trailing, 7)
-                                //Spacer()
-                                }
+                                            Spacer()
+                                            Spacer()
+                                            
+                                            Text("Beef Bone")
+                                                .lineLimit(1)
+                                                .font(.customfont(.bold, fontSize: 17.49))
+                                                .foregroundColor(.black)
+                                                .fontWeight(.bold)
+                                                .padding(.leading,7)
+                                                .padding(.trailing, 50)
+                                                .font(.title)
+                                            
+                                            Text("1kg, Price/g")
+                                                .font(.customfont(.semibold, fontSize: 12))
+                                                .padding(.trailing,57)
+                                                .foregroundColor(.black.opacity(0.5))
+                                            Spacer()
+                                            HStack{
+                                                Text("$4.99")
+                                                    .fontWeight(.bold)
+                                                    .font(.customfont(.bold, fontSize: 17.49))
+                                                    .padding(.leading,10)
+                                                    .lineLimit(1)
+                                                Spacer()
+                                                ZStack{
+                                                    RoundedRectangle(cornerRadius: 12)
+                                                        .fill(Color.green)
+                                                        .frame(width: 35, height: 35)
+                                                    //.overlay(
+                                                    
+                                                    NavigationLink{
+                                                        //
+                                                    }label: {
+                                                        Image("add_btn")
+                                                            .resizable()
+                                                            .scaledToFit()
+                                                            .frame(width:15, height:15)
+                                                    }
+                                                }.padding(.leading,2)
+                                                    .padding(.trailing, 11)
+                                            }.padding(.bottom,15)
+                                        }
+                                    )
+                                //.padding()
                             }
-                        )
-                        //.padding()
-                }
+                            ZStack{
+                                RoundedRectangle(cornerRadius: 25)
+                                    .fill(Color.black.opacity(0.3))
+                                    .frame(width: 152, height: 227)
+                                //.overlay(Text("RoundedRectangle")
+                                //.foregroundColor(.black)
+                                //.font(.title))
+                                RoundedRectangle(cornerRadius: 25)
+                                    .fill(Color.white)
+                                    .frame(width: 150, height: 225)
+                                    .overlay(
+                                        VStack{Spacer()
+                                            Image("broiler_chicken")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .padding(.leading,25)
+                                                .padding(.trailing, 25)
+                                                .padding(.bottom,10)
+                                            Text("Broiler Chicken")
+                                                .lineLimit(1)
+                                                .font(.customfont(.bold, fontSize: 17.49))
+                                                .foregroundColor(.black)
+                                                .fontWeight(.bold)
+                                                .padding(.leading,7)
+                                                .padding(.trailing, 7)
+                                                .font(.title)
+                                                .padding(.top,23)
+                                            
+                                            Text("1kg, Price/g")
+                                                .font(.customfont(.semibold, fontSize: 12))
+                                                .padding(.trailing,57)
+                                                .foregroundColor(.black.opacity(0.5))
+                                            Spacer()
+                                            HStack{
+                                                Text("$4.99")
+                                                    .fontWeight(.bold)
+                                                    .font(.customfont(.bold, fontSize: 17.49))
+                                                    .padding(.leading,10)
+                                                    .lineLimit(1)
+                                                Spacer()
+                                                ZStack{
+                                                    RoundedRectangle(cornerRadius: 12)
+                                                        .fill(Color.green)
+                                                        .frame(width: 35, height: 35)
+                                                    //.overlay(
+                                                    
+                                                    NavigationLink{
+                                                        //
+                                                    }label: {
+                                                        Image("add_btn")
+                                                            .resizable()
+                                                            .scaledToFit()
+                                                            .frame(width:15, height:15)
+                                                    }
+                                                }.padding(.leading,2)
+                                                    .padding(.trailing, 11)
+                                            }.padding(.bottom,15)
+                                        }
+                                    )
+                                //.padding()
+                            }
+                            ZStack{
+                                RoundedRectangle(cornerRadius: 25)
+                                    .fill(Color.black.opacity(0.3))
+                                    .frame(width: 152, height: 227)
+                                //.overlay(Text("RoundedRectangle")
+                                //.foregroundColor(.black)
+                                //.font(.title))
+                                RoundedRectangle(cornerRadius: 25)
+                                    .fill(Color.white)
+                                    .frame(width: 150, height: 225)
+                                    .overlay(
+                                        VStack{Spacer()
+                                            Image("egg_chicken_red")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .padding(.leading,25)
+                                                .padding(.trailing, 25)
+                                                .padding(.bottom,10)
+                                            Text("Egg Chicken Red")
+                                                .lineLimit(1)
+                                                .font(.customfont(.bold, fontSize: 17.49))
+                                                .foregroundColor(.black)
+                                                .fontWeight(.bold)
+                                                .padding(.leading,7)
+                                                .padding(.trailing, 7)
+                                                .font(.title)
+                                            
+                                            Text("7pcs, Price/g")
+                                                .font(.customfont(.semibold, fontSize: 12))
+                                                .padding(.trailing,57)
+                                                .foregroundColor(.black.opacity(0.5))
+                                            Spacer()
+                                            HStack{
+                                                Text("$4.99")
+                                                    .fontWeight(.bold)
+                                                    .font(.customfont(.bold, fontSize: 17.49))
+                                                    .padding(.leading,10)
+                                                    .lineLimit(1)
+                                                Spacer()
+                                                ZStack{
+                                                    RoundedRectangle(cornerRadius: 12)
+                                                        .fill(Color.green)
+                                                        .frame(width: 35, height: 35)
+                                                    //.overlay(
+                                                    
+                                                    NavigationLink{
+                                                        //
+                                                    }label: {
+                                                        Image("add_btn")
+                                                            .resizable()
+                                                            .scaledToFit()
+                                                            .frame(width:15, height:15)
+                                                    }
+                                                }.padding(.leading,2)
+                                                    .padding(.trailing, 11)
+                                            }.padding(.bottom,15)
+                                        }
+                                    )
+                                //.padding()
+                            }//HStack ends
+                            
+                            ZStack{
+                                
+                                RoundedRectangle(cornerRadius: 25)
+                                    .fill(Color.black.opacity(0.3))
+                                    .frame(width: 152, height: 227)
+                                //.overlay(Text("RoundedRectangle")
+                                //.foregroundColor(.black)
+                                //.font(.title))
+                                RoundedRectangle(cornerRadius: 25)
+                                    .fill(Color.white)
+                                    .frame(width: 150, height: 225)
+                                    .overlay(
+                                        VStack{Spacer()
+                                            Image("egg_chicken_white")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .padding(.leading,25)
+                                                .padding(.trailing, 25)
+                                                .padding(.bottom,10)
+                                            Spacer()
+                                            Text("Egg Chicken White")
+                                                .lineLimit(1)
+                                                .font(.customfont(.bold, fontSize: 17.49))
+                                                .foregroundColor(.black)
+                                                .fontWeight(.bold)
+                                                .padding(.leading,7)
+                                                .padding(.trailing, 7)
+                                                .font(.title)
+                                            
+                                            Text("1kg, Price/g")
+                                                .font(.customfont(.semibold, fontSize: 12))
+                                                .padding(.trailing,57)
+                                                .foregroundColor(.black.opacity(0.5))
+                                            Spacer()
+                                            HStack{
+                                                Text("$4.99")
+                                                    .fontWeight(.bold)
+                                                    .font(.customfont(.bold, fontSize: 17.49))
+                                                    .padding(.leading,10)
+                                                    .lineLimit(1)
+                                                Spacer()
+                                                ZStack{
+                                                    RoundedRectangle(cornerRadius: 12)
+                                                        .fill(Color.green)
+                                                        .frame(width: 35, height: 35)
+                                                    //.overlay(
+                                                    
+                                                    NavigationLink{
+                                                        //
+                                                    }label: {
+                                                        Image("add_btn")
+                                                            .resizable()
+                                                            .scaledToFit()
+                                                            .frame(width:15, height:15)
+                                                    }
+                                                }.padding(.leading,2)
+                                                    .padding(.trailing, 11)
+                                            }.padding(.bottom,15)
+                                        }
+                                    )
+                                //.padding()
+                            } }
+                        
+                        
+                        
+                        
+                        
+                    } //VStack ends
+                }//Vertical ScrollView ends
                 
                 Spacer()
                 HStack{
+                    //TabButton(title: "Shop", icon: "storefront", isSelect: true) {
+                    // print("Shop tapped")
                     
                     TabButton(title: "Shop", icon: "store_tab", isSelect: homeVM.selectTab == 0) {
                         
                         print("Button Tab")
                         
                         DispatchQueue.main.async {
-                             
-                            withAnimation {
-                                homeVM.selectTab = 0
-                            }
-                        }
                         
-                       
+                        withAnimation {
+                          homeVM.selectTab = 0
+                        }
+                         }
+                        
+                        
                     }
                     TabButton(title: "Explore", icon: "explore_tab", isSelect: homeVM.selectTab == 1) {
                         DispatchQueue.main.async {
-                             
+                            
                             withAnimation {
                                 homeVM.selectTab = 1
                             }
                         }
                     }
-                    
                     TabButton(title: "Cart", icon: "cart_tab", isSelect: homeVM.selectTab == 2) {
                         DispatchQueue.main.async {
-                             
+                            
                             withAnimation {
                                 homeVM.selectTab = 2
                             }
                         }
                     }
-                    
-                    TabButton(title: "Favourite", icon: "fav_tab", isSelect: homeVM.selectTab == 3) {
+                    TabButton(title: "Cart", icon: "cart_tab", isSelect: homeVM.selectTab == 2){
                         DispatchQueue.main.async {
-                             
+                            
                             withAnimation {
                                 homeVM.selectTab = 3
                             }
@@ -197,14 +863,14 @@ struct MainTabView: View {
                     
                     TabButton(title: "Account", icon: "account_tab", isSelect: homeVM.selectTab == 4) {
                         DispatchQueue.main.async {
-                             
+                            
                             withAnimation {
                                 homeVM.selectTab = 4
                             }
                         }
                     }
                     
-                                    
+                    
                 }
                 .padding(.top, 10)
                 .padding(.bottom, .bottomInsets)
@@ -214,20 +880,15 @@ struct MainTabView: View {
                 .shadow(color: Color.black.opacity(0.15), radius: 3, x: 0, y: -2)
             }
         }
-        .navigationTitle("")
-        .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
-        .ignoresSafeArea()
-        
-        
-    }
-}
-
-struct MainTabView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            MainTabView()
         }
-        
     }
-}
+    
+    struct MainTabView_Previews: PreviewProvider {
+        static var previews: some View {
+            NavigationView {
+                MainTabView()
+            }
+            
+        }
+    }
+
