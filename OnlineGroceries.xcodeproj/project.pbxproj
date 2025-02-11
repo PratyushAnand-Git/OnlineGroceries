@@ -106,6 +106,7 @@
 		3FCEC6072D5203C3002B4F08 /* Custom Collection */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Custom Collection"; sourceTree = "<group>"; };
 		3FCEC60E2D52057B002B4F08 /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (3F4416552D539C5C00F20FC1 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 3F4416562D539C5C00F20FC1 /* PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
 		3FD9E1282D5B8689008607F7 /* ProductDetail */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ProductDetail; sourceTree = "<group>"; };
+		3FD9E12B2D5B8F88008607F7 /* Home */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Home; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +219,7 @@
 		3FF04A052D44F71500A44516 /* View 2 */ = {
 			isa = PBXGroup;
 			children = (
+				3FD9E12B2D5B8F88008607F7 /* Home */,
 				3FD9E1282D5B8689008607F7 /* ProductDetail */,
 				3F44164C2D53942B00F20FC1 /* MainTab */,
 				3FF04A062D44F73100A44516 /* Login */,
@@ -257,6 +259,7 @@
 				3FCEC6072D5203C3002B4F08 /* Custom Collection */,
 				3FCEC60E2D52057B002B4F08 /* ViewModel */,
 				3FD9E1282D5B8689008607F7 /* ProductDetail */,
+				3FD9E12B2D5B8F88008607F7 /* Home */,
 			);
 			name = OnlineGroceries;
 			packageProductDependencies = (
