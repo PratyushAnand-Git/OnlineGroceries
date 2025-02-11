@@ -5,10 +5,10 @@
 //  Created by CodeForAny on 03/08/23.
 //
 
-/*import SwiftUI
+import SwiftUI
 import SDWebImageSwiftUI
 
-struct ProductCell: View {
+/*struct ProductCell: View {
     @State var pObj: ProductModel = ProductModel(dict: [:])
     @State var width:Double = 180.0
     var didAddCart: ( ()->() )?
@@ -99,48 +99,99 @@ struct ProductCell_Previews: PreviewProvider {
             
         }
     }
-}
+}*/
 
-*//*struct ProductCell: View {
+struct ProductCell: View {
     let imageName: String
     let title: String
     let quantity: String
     let price: String
     
-    var body: some view{
+    var body: some View{
         VStack(alignment: .leading){
-            Image(imageName)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 100, height: 100)
-                .cornerRadius(10)
-            Text(title)
-                .font(.caption)
-                .fontWeight(.bold)
-            Text(quantity)
-                .font(.caption)
-                .foregroundColor(.gray)
-            HStack{
-                Text(price)
-                    .font(.subheadline)
-                    .fontWeight(.bold)
-                Spacer()
-                Button(action: {}) {
-                    Image(systemName: "plus.circle.fill")
-                        .foregroundColor(.green)
-                }
-            }
-        }
-        .padding()
-        .background(Color.white)
-        .cornerRadius(10)
-        .shadow(radius: 5)
+            /*Image(imageName)
+             .resizable()
+             .aspectRatio(contentMode: .fit)
+             .frame(width: 100, height: 100)
+             .cornerRadius(10)
+             Text(title)
+             .font(.caption)
+             .fontWeight(.bold)
+             Text(quantity)
+             .font(.caption)
+             .foregroundColor(.gray)
+             Spacer()
+             HStack{
+             Text(price)
+             .font(.subheadline)
+             .fontWeight(.bold)
+             Spacer()
+             Button(action: {}) {
+             Image(systemName: "plus.circle.fill")
+             .foregroundColor(.green)
+             }
+             }
+             }
+             .padding()
+             .background(Color.white)
+             .cornerRadius(10)
+             .shadow(radius: 5)
+             .frame(width: 152, height: 227)*/
+            
+            //
+            
+            RoundedRectangle(cornerRadius: 25)
+                .stroke(Color.gray.opacity(0.3), lineWidth: 2)
+                .fill(Color.white)
+                .frame(width: 152, height: 227)
+                .overlay(
+                    VStack{Spacer()
+                        Image(imageName)
+                            .resizable()
+                            .scaledToFit()
+                            .padding(.leading,25)
+                            .padding(.trailing, 25)
+                            .padding(.bottom,10)
+                        Text(title)
+                            .lineLimit(1)
+                            .font(.customfont(.bold, fontSize: 17.49))
+                            .foregroundColor(.black)
+                            .fontWeight(.bold)
+                            .padding(.leading,7)
+                            .padding(.trailing, 7)
+                            .font(.title)
+                        
+                        Text(quantity)
+                            .font(.customfont(.semibold, fontSize: 12))
+                            .padding(.trailing,57)
+                            .foregroundColor(.black.opacity(0.5))
+                        Spacer()
+                        HStack{
+                            
+                            Text(price)
+                                .font(.subheadline)
+                                .fontWeight(.bold)
+                                .padding(.leading, 15)
+                                //.padding(.bottom,3)
+                            Spacer()
+                            Button(action: {}) {
+                                Image(systemName: "plus.square.fill")
+                                    .foregroundColor(.green)
+                                    .padding(.trailing,15)
+                                   // .padding(.bottom,10)
+                            }
+                        }
+                        .padding(.bottom,15)
+                    }
+                )}
+        
     }
 }
 struct ProductCell_Previews: PreviewProvider {
-    static var previews: some view {
+    static var previews: some View {
         ProductCell(imageName: "bananas", title: "Organic Bananas", quantity: "7pcs, Price/g", price: "$4.99")
             .previewLayout(.sizeThatFits)
             .padding()
     }
-}*/
+}
+
