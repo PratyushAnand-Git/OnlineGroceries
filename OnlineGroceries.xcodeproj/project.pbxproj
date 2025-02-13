@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F312C822D5CCF930059A371 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F312C812D5CCF930059A371 /* ProductDetail.swift */; };
 		3F9E41732D4D026400A38933 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9E41722D4D026400A38933 /* Launch Screen.storyboard */; };
 		3FDB2D732D561FD600AE8B72 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3FDB2D722D561FD600AE8B72 /* SDWebImageSwiftUI */; };
 		3FF049642D44EFCB00A44516 /* OnlineGroceriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF049632D44EFCB00A44516 /* OnlineGroceriesApp.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F312C812D5CCF930059A371 /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
 		3F9E41722D4D026400A38933 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		3FF049602D44EFCB00A44516 /* OnlineGroceries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineGroceries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF049632D44EFCB00A44516 /* OnlineGroceriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGroceriesApp.swift; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				3FF049DB2D44F5C000A44516 /* ServiceCall.swift */,
 				3FF049DC2D44F5C000A44516 /* TabButton.swift */,
 				3FF049E02D44F5C000A44516 /* UIExtension.swift */,
+				3F312C812D5CCF930059A371 /* ProductDetail.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				3FF049EA2D44F5C000A44516 /* Globs.swift in Sources */,
 				3FF049662D44EFCB00A44516 /* WelcomeView.swift in Sources */,
 				3FF049F02D44F5C000A44516 /* SearchTextField.swift in Sources */,
+				3F312C822D5CCF930059A371 /* ProductDetail.swift in Sources */,
 				3FF04A0D2D44F92300A44516 /* LogInView.swift in Sources */,
 				3FF049642D44EFCB00A44516 /* OnlineGroceriesApp.swift in Sources */,
 				3FF049EE2D44F5C000A44516 /* CountryPickerView.swift in Sources */,

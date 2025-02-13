@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct TabButton: View {
-    var title: String
-    var icon: String
+    @State var title: String
+    @State var icon: String
     var isSelect: Bool
     var didSelect: (() -> Void)
     
