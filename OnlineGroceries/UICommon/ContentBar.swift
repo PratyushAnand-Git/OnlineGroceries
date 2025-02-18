@@ -26,24 +26,25 @@ struct ContentBar: View {
             Button(action: {
                 quantity += 1
             }) {
-                Image("add_btn")
+                Image("add_button")
                       //(systemName : "plus.circle.fill")
                     .resizable()
-                    .frame(width: 30, height: 30)
+                    .frame(width: 90, height: 90)
                     .foregroundColor(.green)
+                    
             }
             Spacer()
             
-           /* Text(String(format: "$%.2f", totalPrice))
+            Text(String(format: "$%.2f", totalPrice))
                 .font(.title)
-                .foregroundColor(.green)*/
+                .foregroundColor(.green)
         }
         .padding()
     }
     
-   /* var totalPrice: Double {
+    var totalPrice: Double {
         return pricePerItem * Double(quantity)
-    }*/
+    }
 }
 
 #Preview {
@@ -58,3 +59,4 @@ struct ContentBar: View {
     }
 }
 */
+

@@ -121,9 +121,9 @@ struct ProductDetailView: View {
             HStack{
                 Text("Product Detail")
                     .font(.customfont(.bold,fontSize:17))
-                    .padding(.trailing,260)
+                    .padding(.trailing,200)
             
-                Spacer()
+                //Spacer()
                 Image("detail_open")
                     .resizable()
                     .scaledToFit()
@@ -133,11 +133,12 @@ struct ProductDetailView: View {
             
             Spacer()
 
-            Text("Apples Are Nutritious. Apples May Be Good For Weight Loss")
+            Text("Apples Are Nutritious. Apples May Be Good For Weight Loss\nApples May Be Good For Your Heart. As Part Of A Healthful\nAnd Varied Diet")
                 .font(.customfont(.semibold,fontSize: 12))
                 .padding(.horizontal)
                 .padding(.trailing,40)
                 .foregroundColor(.black.opacity(0.6))
+                .multilineTextAlignment((.leading))
             
             Text("Apples May Be Good For Your Heart. As Part Of A Healthful")
                 .font(.customfont(.semibold,fontSize: 12))
@@ -152,6 +153,58 @@ struct ProductDetailView: View {
             Spacer()
             Divider()
                 .frame(width: 350)
+            HStack{
+                Text("Nutritions")
+                    .font(.customfont(.bold,fontSize:17))
+                    //.padding(.trailing,200)
+                    .padding(.leading, 30)
+                Spacer()
+                RoundedRectangle(cornerRadius: 5)
+                    .foregroundColor(Color.black.opacity(0.1))
+                    .frame(width: 45, height: 20)
+                    .overlay(
+                        Text("100gr")
+                            .foregroundColor(.black.opacity(0.5))
+                            .font(.customfont(.bold,fontSize:13))
+                                             
+                            )
+                        
+                        
+                        
+                NavigationLink {
+                    //AnyView(destination())
+                } label: {
+                    Image("1814086_arrow_forward_next_right_icon")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60, height: 60)
+                        
+                }
+                
+            }
+            Divider()
+            
+            HStack{
+                Text("Review")
+                    .font(.customfont(.bold,fontSize:17))
+                    //.padding(.trailing,200)
+                    //.padding(.leading, 30)
+                Spacer()
+                
+                StarRatingView()
+                        
+                        
+                        
+                NavigationLink {
+                    //AnyView(destination())
+                } label: {
+                    Image("1814086_arrow_forward_next_right_icon")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60, height: 60)
+                        
+                }
+            }
             
             
         }//VStack

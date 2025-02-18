@@ -11,6 +11,7 @@
 		3F3BEE932D6360500046ADE3 /* ContentBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3BEE922D6360500046ADE3 /* ContentBar.swift */; };
 		3F9E41732D4D026400A38933 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9E41722D4D026400A38933 /* Launch Screen.storyboard */; };
 		3FDB2D732D561FD600AE8B72 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3FDB2D722D561FD600AE8B72 /* SDWebImageSwiftUI */; };
+		3FDE4EB22D64C4090075AE5D /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE4EB12D64C4090075AE5D /* StarRatingView.swift */; };
 		3FF049642D44EFCB00A44516 /* OnlineGroceriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF049632D44EFCB00A44516 /* OnlineGroceriesApp.swift */; };
 		3FF049662D44EFCB00A44516 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF049652D44EFCB00A44516 /* WelcomeView.swift */; };
 		3FF049682D44EFCC00A44516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FF049672D44EFCC00A44516 /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		3F312C812D5CCF930059A371 /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
 		3F3BEE922D6360500046ADE3 /* ContentBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBar.swift; sourceTree = "<group>"; };
 		3F9E41722D4D026400A38933 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		3FDE4EB12D64C4090075AE5D /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 		3FF049602D44EFCB00A44516 /* OnlineGroceries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineGroceries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF049632D44EFCB00A44516 /* OnlineGroceriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGroceriesApp.swift; sourceTree = "<group>"; };
 		3FF049652D44EFCB00A44516 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				3FF049E02D44F5C000A44516 /* UIExtension.swift */,
 				3F312C812D5CCF930059A371 /* ProductDetail.swift */,
 				3F3BEE922D6360500046ADE3 /* ContentBar.swift */,
+				3FDE4EB12D64C4090075AE5D /* StarRatingView.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				3F3BEE932D6360500046ADE3 /* ContentBar.swift in Sources */,
 				3FF049EB2D44F5C000A44516 /* BackButton.swift in Sources */,
 				3FF049EA2D44F5C000A44516 /* Globs.swift in Sources */,
+				3FDE4EB22D64C4090075AE5D /* StarRatingView.swift in Sources */,
 				3FF049662D44EFCB00A44516 /* WelcomeView.swift in Sources */,
 				3FF049F02D44F5C000A44516 /* SearchTextField.swift in Sources */,
 				3F312C822D5CCF930059A371 /* ProductDetail.swift in Sources */,
