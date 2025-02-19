@@ -10,6 +10,7 @@
 		3F312C822D5CCF930059A371 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F312C812D5CCF930059A371 /* ProductDetail.swift */; };
 		3F3BEE932D6360500046ADE3 /* ContentBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3BEE922D6360500046ADE3 /* ContentBar.swift */; };
 		3F9E41732D4D026400A38933 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9E41722D4D026400A38933 /* Launch Screen.storyboard */; };
+		3FB08B1D2D66169A00C21EB2 /* HeartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB08B1C2D66169A00C21EB2 /* HeartButton.swift */; };
 		3FDB2D732D561FD600AE8B72 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3FDB2D722D561FD600AE8B72 /* SDWebImageSwiftUI */; };
 		3FDE4EB22D64C4090075AE5D /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE4EB12D64C4090075AE5D /* StarRatingView.swift */; };
 		3FF049642D44EFCB00A44516 /* OnlineGroceriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF049632D44EFCB00A44516 /* OnlineGroceriesApp.swift */; };
@@ -58,6 +59,7 @@
 		3F312C812D5CCF930059A371 /* ProductDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
 		3F3BEE922D6360500046ADE3 /* ContentBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBar.swift; sourceTree = "<group>"; };
 		3F9E41722D4D026400A38933 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		3FB08B1C2D66169A00C21EB2 /* HeartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartButton.swift; sourceTree = "<group>"; };
 		3FDE4EB12D64C4090075AE5D /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 		3FF049602D44EFCB00A44516 /* OnlineGroceries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineGroceries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF049632D44EFCB00A44516 /* OnlineGroceriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineGroceriesApp.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 				3F312C812D5CCF930059A371 /* ProductDetail.swift */,
 				3F3BEE922D6360500046ADE3 /* ContentBar.swift */,
 				3FDE4EB12D64C4090075AE5D /* StarRatingView.swift */,
+				3FB08B1C2D66169A00C21EB2 /* HeartButton.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				3FF04A082D44F83200A44516 /* SignInView.swift in Sources */,
 				3FF049E72D44F5C000A44516 /* ServiceCall.swift in Sources */,
 				3FF049EC2D44F5C000A44516 /* UIExtension.swift in Sources */,
+				3FB08B1D2D66169A00C21EB2 /* HeartButton.swift in Sources */,
 				3FF04A0F2D44F94B00A44516 /* SignUpView.swift in Sources */,
 				3FF049EF2D44F5C000A44516 /* Country.swift in Sources */,
 				3FF049E92D44F5C000A44516 /* CategoryCell.swift in Sources */,

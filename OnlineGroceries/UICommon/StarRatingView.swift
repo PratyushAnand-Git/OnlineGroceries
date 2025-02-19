@@ -37,7 +37,7 @@ struct StarView : View {
             .resizable()
             .aspectRatio(contentMode: .fit)
             .foregroundColor(isFilled ? .yellow : .gray)
-            .frame(width: 40, height: 40)
+            .frame(width: 20, height: 20)
     }
 }
 
