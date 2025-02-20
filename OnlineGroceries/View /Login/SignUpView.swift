@@ -1,17 +1,3 @@
-//
-//  SignUpView.swift
-//  OnlineGroceries
-//
-//  Created by student on 25/01/25.
-//
-
-//
-//  SignUpView.swift
-//  FoodDelivery
-//
-//  Created by student on 23/01/25.
-//
-
 import SwiftUI
 
 struct SignUpView: View {
@@ -69,7 +55,6 @@ struct SignUpView: View {
                                 .foregroundColor(.black.opacity(0.9))
                                 .frame(minWidth:0, alignment: .leading)
                                 
-                                //.lineLimit(1)
                                 
                             
                             Button{
@@ -105,9 +90,13 @@ struct SignUpView: View {
                         }
                         .padding(.leading,-82)
                         
-                        Button(action: {
+                        NavigationLink{
+                           HomeView()
+                        }label:
+                        /*Button(action: {
                             showAlert = true
-                        }) {
+                        }) */
+                        {
                             Text("Sign Up")
                                 .font(.customfont(.medium, fontSize: 20))
                                 .padding()
@@ -118,10 +107,9 @@ struct SignUpView: View {
                                 .cornerRadius(18)
                                 
                         }.padding(.top, 60)
-                            .alert(isPresented: $showAlert){
-                                Alert(title: Text("Error"), message: Text("Server not connected"), dismissButton: .default(Text("OK")))
-                            //.padding(.top, 60)
-                            }
+                            //.alert(isPresented: $showAlert){
+                                //Alert(title: Text("Error"), message: Text("Server not connected"), dismissButton: .default(Text("OK")))
+                            //.padding(.top, 60) }
                             
                                 
                         }

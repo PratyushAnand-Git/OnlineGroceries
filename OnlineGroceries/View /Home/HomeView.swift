@@ -21,7 +21,7 @@ struct HomeView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 35,height: 35)
-                    .padding(.top,10)
+                    //.padding(.top,10)
                 
                 HStack{
                     Spacer()
@@ -29,7 +29,7 @@ struct HomeView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 25, height: 25)
-                        .padding(.trailing,5)
+                        //.padding(.trailing,5)
                     
                     
                     Text("Dhaka, Banassre")
@@ -72,68 +72,9 @@ struct HomeView: View {
                         ScrollView(.horizontal,showsIndicators:false){
                             HStack{
                                 Spacer()
+                                ProductCustomCell(image:"banana",title: "Organic Bananas", subtitle: "7pcs, Price/g",price: "$4.99", navigateTo: AnyView(Banana()) )
                                 
-                                ZStack{
-                                    
-                                    RoundedRectangle(cornerRadius: 25)
-//                                        .stroke(Color.gray.opacity(0.3))
-                                        .fill(Color.black.opacity(0.3))
-                                        .frame(width: 152, height: 227)
-                                    
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .fill(Color.white)
-                                        .frame(width: 150, height: 225)
-                                        .overlay(
-                                            VStack{Spacer()
-                                                Image("banana")
-                                                    .resizable()
-                                                    .scaledToFit()
-                                                    .padding(.leading,25)
-                                                    .padding(.trailing, 25)
-                                                    .padding(.bottom,10)
-                                                Text("Organic Bananas")
-                                                    .lineLimit(1)
-                                                    .font(.customfont(.bold, fontSize: 17.49))
-                                                    .foregroundColor(.black)
-                                                    .fontWeight(.bold)
-                                                    .padding(.leading,7)
-                                                    .padding(.trailing, 7)
-                                                    .font(.title)
-                                                
-                                                Text("7pcs, Price/g")
-                                                    .font(.customfont(.semibold, fontSize: 12))
-                                                    .padding(.trailing,57)
-                                                    .foregroundColor(.black.opacity(0.5))
-                                                Spacer()
-                                                HStack{
-                                                    Text("$4.99")
-                                                        .fontWeight(.bold)
-                                                        .font(.customfont(.bold, fontSize: 17.49))
-                                                        .padding(.leading,10)
-                                                        .lineLimit(1)
-                                                    Spacer()
-                                                    ZStack{
-                                                        RoundedRectangle(cornerRadius: 12)
-                                                            .fill(Color.green)
-                                                            .frame(width: 35, height: 35)
-                                                        //.overlay(
-                                                        
-                                                        NavigationLink{
-                                                            //
-                                                        }label: {
-                                                            Image("add_btn")
-                                                                .resizable()
-                                                                .scaledToFit()
-                                                                .frame(width:15, height:15)
-                                                        }
-                                                    }.padding(.leading,2)
-                                                        .padding(.trailing, 11)
-                                                }.padding(.bottom,15)
-                                            }
-                                        )
-                                    
-                                }
-                                
+                                ProductCustomCell(image:"apple_red",title: "Red Apple", subtitle: "1kg, Price/g",price: "$4.99", navigateTo: AnyView(Apple()) )
                                 ZStack{
                                     RoundedRectangle(cornerRadius: 25)
                                         .fill(Color.black.opacity(0.3))
@@ -176,10 +117,9 @@ struct HomeView: View {
                                                         RoundedRectangle(cornerRadius: 12)
                                                             .fill(Color.green)
                                                             .frame(width: 35, height: 35)
-                                                        //.overlay(
                                                         
                                                         NavigationLink{
-                                                            //
+                                                            Apple()
                                                         }label: {
                                                             Image("add_btn")
                                                                 .resizable()
@@ -241,7 +181,7 @@ struct HomeView: View {
                                                             //.overlay(
                                                             
                                                             NavigationLink{
-                                                                //
+                                                                Banana()
                                                             }label: {
                                                                 Image("add_btn")
                                                                     .resizable()
@@ -255,8 +195,6 @@ struct HomeView: View {
                                             )
                                         //.padding()
                                     }
-                                
-                                ProductCell(imageName: "banana",title: "Organic Bananas", quantity: "7pcs, Price/g", price: "$4.99")
                                 
                                ProductCell(imageName: "banana", title: "Organic Bananas", quantity: "7pcs, Price/g", price: "$4.99")
                                 
@@ -332,7 +270,7 @@ struct HomeView: View {
                                                         //.overlay(
                                                         
                                                         NavigationLink{
-                                                            //
+                                                           BellPepperRed()
                                                         }label: {
                                                             Image("add_btn")
                                                                 .resizable()
@@ -393,7 +331,7 @@ struct HomeView: View {
                                                         //.overlay(
                                                         
                                                         NavigationLink{
-                                                            //
+                                                           Ginger()
                                                         }label: {
                                                             Image("add_btn")
                                                                 .resizable()
@@ -451,7 +389,7 @@ struct HomeView: View {
                                                         //.overlay(
                                                         
                                                         NavigationLink{
-                                                            //
+                                                            Banana()
                                                         }label: {
                                                             Image("add_btn")
                                                                 .resizable()
@@ -588,7 +526,7 @@ struct HomeView: View {
                                                     //.overlay(
                                                     
                                                     NavigationLink{
-                                                        //
+                                                        BeefBone()
                                                     }label: {
                                                         Image("add_btn")
                                                             .resizable()
@@ -649,7 +587,7 @@ struct HomeView: View {
                                                     //.overlay(
                                                     
                                                     NavigationLink{
-                                                        //
+                                                        BroilerChicken()
                                                     }label: {
                                                         Image("add_btn")
                                                             .resizable()
@@ -706,10 +644,9 @@ struct HomeView: View {
                                                     RoundedRectangle(cornerRadius: 12)
                                                         .fill(Color.green)
                                                         .frame(width: 35, height: 35)
-                                                    //.overlay(
-                                                    
+                                                  
                                                     NavigationLink{
-                                                        //
+                                                        EggChickenRed()
                                                     }label: {
                                                         Image("add_btn")
                                                             .resizable()
@@ -769,10 +706,9 @@ struct HomeView: View {
                                                     RoundedRectangle(cornerRadius: 12)
                                                         .fill(Color.green)
                                                         .frame(width: 35, height: 35)
-                                                    //.overlay(
                                                     
                                                     NavigationLink{
-                                                        //
+                                                        EggChickenWhite()
                                                     }label: {
                                                         Image("add_btn")
                                                             .resizable()
@@ -803,19 +739,19 @@ struct HomeView: View {
                         print("Shop tapped")}
                     
                     TabButton(title: "Explore", icon: "explorefront", isSelect: true) {
-                        print("Shop tapped")}
+                        print("Explore tapped")}
                         
                     TabButton(title: "Cart", icon: "cart_tab", isSelect: true) {
-                        print("Shop tapped")}
+                        print("Cart tapped")}
                     
                     TabButton(title: "Favourite", icon: "favouritefront", isSelect: true) {
-                        print("Shop tapped")}
+                        print("Favourite tapped")}
                     TabButton(title: "Account", icon: "account_tab", isSelect: true) {
-                        print("Shop tapped")}
+                        print("Account tapped")}
                     
                     
                 }
-                .padding(.top, 10)
+                //.padding(.top, 5)
                 .padding(.bottom, .bottomInsets)
                 .padding(.horizontal, 10)
                 .background(Color.white)

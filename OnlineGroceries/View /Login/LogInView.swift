@@ -57,9 +57,12 @@ struct LoginView: View {
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
                 .padding(.bottom, .screenWidth * 0.03)
                 
-                Button(action:{
-                    showError = true
-                }) {
+                /*Button(action:{
+                    //showError = true
+                })*/
+                NavigationLink{
+                   HomeView()
+                }label: {
                     Text("Log In")
                 }.font(.customfont(.medium, fontSize: 20))
                     .padding()
@@ -69,8 +72,8 @@ struct LoginView: View {
                     .background(.green)
                 .cornerRadius(18)
                 .padding(.bottom, 20)
-                .alert(isPresented: $showError){
-                    Alert(title: Text("Error"), message: Text("Server not connected"), dismissButton: .default(Text("OK")))}
+               // .alert(isPresented: $showError){
+                   // Alert(title: Text("Error"), message: Text("Server not connected"), dismissButton: .default(Text("OK")))}
                 
                 
                 
@@ -97,35 +100,6 @@ struct LoginView: View {
             .padding(.horizontal, 20)
             .padding(.bottom, .bottomInsets)
             
-           /* HStack {
-                Button(action: {
-                    
-                }){
-                    Image("google")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width:40, height: 40)
-                        .background(.white)
-                        .cornerRadius(14)
-                        .padding(.top,600)
-                    
-                    Image("fb_logo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width:40, height: 40)
-                        .background(.black)
-                        .cornerRadius(14)
-                        .padding(.top,600)
-                    Image("apple_logo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width:40, height: 40)
-                        .background(.white)
-                        .cornerRadius(14)
-                        .padding(.top,600)}
-            }
-            */
-            // Back Button
             VStack {
                 HStack {
                     Button {

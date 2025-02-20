@@ -109,36 +109,6 @@ struct ProductCell: View {
     
     var body: some View{
         VStack(alignment: .leading){
-            /*Image(imageName)
-             .resizable()
-             .aspectRatio(contentMode: .fit)
-             .frame(width: 100, height: 100)
-             .cornerRadius(10)
-             Text(title)
-             .font(.caption)
-             .fontWeight(.bold)
-             Text(quantity)
-             .font(.caption)
-             .foregroundColor(.gray)
-             Spacer()
-             HStack{
-             Text(price)
-             .font(.subheadline)
-             .fontWeight(.bold)
-             Spacer()
-             Button(action: {}) {
-             Image(systemName: "plus.circle.fill")
-             .foregroundColor(.green)
-             }
-             }
-             }
-             .padding()
-             .background(Color.white)
-             .cornerRadius(10)
-             .shadow(radius: 5)
-             .frame(width: 152, height: 227)*/
-            
-            //
             
             RoundedRectangle(cornerRadius: 25)
                 .stroke(Color.gray.opacity(0.3), lineWidth: 2)

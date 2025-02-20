@@ -3,8 +3,16 @@ import SwiftUI
 struct ProductDetailView: View {
     @State private var showError: Bool = false
     @State private var quantity: Int = 1
-    let pricePerItem: Double = 4.99
+    @State var size: CGFloat = 0.0
+    var pricePerItem: String = ""
+    //let pricePerItem: Double = 4.99
+    @State var image: String = ""
+    @State var title: String = ""
+    @State var text: String = ""
+    var navigateBackTo: AnyView // Now, this is AnyView to accept any view
     
+    
+
     var body: some View {
         VStack{
             ScrollView(showsIndicators:false){
@@ -16,9 +24,7 @@ struct ProductDetailView: View {
                         VStack{Spacer()
                             
                             HStack{
-                                NavigationLink{
-                                    
-                                } label: {
+                                NavigationLink(destination: navigateBackTo) {
                                     Image("back")
                                         .resizable()
                                         .scaledToFit()
@@ -38,22 +44,23 @@ struct ProductDetailView: View {
                             .padding(.horizontal,25)
                             .padding(.top,70)
                             
-                            Image("apple")
+                            Image(image)
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 350,height:350)
+                                .frame(width: size,height:size)
                             
                         } //vs
                     )
                 
             VStack{
                 HStack{
-                    Text("Natural Red Apple")
+                    Text(title)
                         .font(.customfont(.bold, fontSize: 25))
                         .foregroundColor(.black)
                     Spacer()
                     
                     HeartButton()
+                        .padding(.trailing,15)
                 }.padding(.horizontal)
                 
                 Text("1kg,Price")
@@ -93,23 +100,15 @@ struct ProductDetailView: View {
                 
                 Spacer()
                 
-                Text("Apples Are Nutritious. Apples May Be Good For Weight Loss\nApples May Be Good For Your Heart. As Part Of A Healthful\nAnd Varied Diet")
+                Text(text)
+                //("Apples Are Nutritious. Apples May Be Good For Weight Loss\nApples May Be Good For Your Heart. As Part Of A Healthful\nAnd Varied Diet")
                     .font(.customfont(.semibold,fontSize: 12))
                     .padding(.horizontal)
                     .padding(.trailing,40)
+                    //.padding(.leading,10)
                     .foregroundColor(.black.opacity(0.6))
                     .multilineTextAlignment((.leading))
                 
-                Text("Apples May Be Good For Your Heart. As Part Of A Healthful")
-                    .font(.customfont(.semibold,fontSize: 12))
-                    .padding(.horizontal)
-                    .padding(.trailing,45)
-                    .foregroundColor(.black.opacity(0.6))
-                Text("And Varied Diet")
-                    .font(.customfont(.semibold,fontSize: 12))
-                    .padding(.horizontal)
-                    .padding(.trailing,277)
-                    .foregroundColor(.black.opacity(0.6))
                 Spacer()
                 Divider()
                     .frame(width: 350)
@@ -191,5 +190,5 @@ struct ProductDetailView: View {
 
 
 #Preview {
-    ProductDetailView()
+    ProductDetailView(size: 350, pricePerItem: "$4.49", image: "apple" ,title: "Natural Red Apple", text: "Apples Are Nutritious. Apples May Be Good For Weight Loss\nApples May Be Good For Your Heart. As Part Of A Healthful\nAnd Varied Diet", navigateBackTo: AnyView(HomeView()))
 }
