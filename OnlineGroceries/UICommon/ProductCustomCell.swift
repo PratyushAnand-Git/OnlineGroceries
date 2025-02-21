@@ -19,11 +19,11 @@ struct ProductCustomCell: View {
             ZStack{
                 RoundedRectangle(cornerRadius: 25)
                     .fill(Color.black.opacity(0.3))
-                    .frame(width: 152, height: 227)
+                    .frame(width: 177, height: 252)
                 
                 RoundedRectangle(cornerRadius: 25)
                     .fill(Color.white)
-                    .frame(width: 150, height: 225)
+                    .frame(width: 175, height: 250)
                     .overlay(
                         VStack{Spacer()
                             Image(image)
@@ -78,5 +78,8 @@ struct ProductCustomCell: View {
 }
 
 #Preview {
-    ProductCustomCell(image:"banana",title: "Organic Bananas", subtitle: "7pcs, Price/g",price: "$4.99", navigateTo: AnyView(Banana()) )
+    HStack{
+        ProductCustomCell(image:"banana",title: "Organic Bananas", subtitle: "7pcs, Price/g",price: "$4.99", navigateTo: AnyView(Banana()) )
+        
+    }
 }
