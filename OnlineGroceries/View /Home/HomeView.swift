@@ -10,6 +10,7 @@ struct HomeView: View {
      
     @StateObject var homeVM = HomeViewModel.shared
     @State private var searchText = ""
+
     
     var body: some View {
         ZStack{
@@ -21,7 +22,7 @@ struct HomeView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 35,height: 35)
-                    //.padding(.top,10)
+                //.padding(.top,10)
                 
                 HStack{
                     Spacer()
@@ -29,7 +30,7 @@ struct HomeView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 25, height: 25)
-                        //.padding(.trailing,5)
+                    //.padding(.trailing,5)
                     
                     
                     Text("Dhaka, Banassre")
@@ -135,68 +136,68 @@ struct HomeView: View {
                                 }
                                 
                                 
-                                    ZStack{
-                                        RoundedRectangle(cornerRadius: 25)
-                                            .fill(Color.black.opacity(0.3))
-                                            .frame(width: 152, height: 227)
-                                        
-                                        RoundedRectangle(cornerRadius: 25)
-                                            .fill(Color.white)
-                                            .frame(width: 150, height: 225)
-                                            .overlay(
-                                                VStack{Spacer()
-                                                        Image("banana")
-                                                            .resizable()
-                                                            .scaledToFit()
-                                                            .padding(.leading,25)
-                                                            .padding(.trailing, 25)
-                                                            .padding(.bottom,10)
-                                                        Text("Organic Bananas")
-                                                            .lineLimit(1)
-                                                            .font(.customfont(.bold, fontSize: 17.49))
-                                                            .foregroundColor(.black)
-                                                            .fontWeight(.bold)
-                                                            .padding(.leading,7)
-                                                            .padding(.trailing, 7)
-                                                            .font(.title)
+                                ZStack{
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .fill(Color.black.opacity(0.3))
+                                        .frame(width: 152, height: 227)
+                                    
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .fill(Color.white)
+                                        .frame(width: 150, height: 225)
+                                        .overlay(
+                                            VStack{Spacer()
+                                                Image("banana")
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .padding(.leading,25)
+                                                    .padding(.trailing, 25)
+                                                    .padding(.bottom,10)
+                                                Text("Organic Bananas")
+                                                    .lineLimit(1)
+                                                    .font(.customfont(.bold, fontSize: 17.49))
+                                                    .foregroundColor(.black)
+                                                    .fontWeight(.bold)
+                                                    .padding(.leading,7)
+                                                    .padding(.trailing, 7)
+                                                    .font(.title)
+                                                
+                                                Text("7pcs, Price/g")
+                                                    .font(.customfont(.semibold, fontSize: 12))
+                                                    .padding(.trailing,57)
+                                                    .foregroundColor(.black.opacity(0.5))
+                                                
+                                                Spacer()
+                                                
+                                                HStack{
+                                                    Text("$4.99")
+                                                        .fontWeight(.bold)
+                                                        .font(.customfont(.bold, fontSize: 17.49))
+                                                        .padding(.leading,10)
+                                                        .lineLimit(1)
+                                                    Spacer()
+                                                    ZStack{
+                                                        RoundedRectangle(cornerRadius: 12)
+                                                            .fill(Color.green)
+                                                            .frame(width: 35, height: 35)
+                                                        //.overlay(
                                                         
-                                                        Text("7pcs, Price/g")
-                                                            .font(.customfont(.semibold, fontSize: 12))
-                                                            .padding(.trailing,57)
-                                                            .foregroundColor(.black.opacity(0.5))
-                                                    
-                                                        Spacer()
-                                                    
-                                                    HStack{
-                                                        Text("$4.99")
-                                                            .fontWeight(.bold)
-                                                            .font(.customfont(.bold, fontSize: 17.49))
-                                                            .padding(.leading,10)
-                                                            .lineLimit(1)
-                                                        Spacer()
-                                                        ZStack{
-                                                            RoundedRectangle(cornerRadius: 12)
-                                                                .fill(Color.green)
-                                                                .frame(width: 35, height: 35)
-                                                            //.overlay(
-                                                            
-                                                            NavigationLink{
-                                                                Banana()
-                                                            }label: {
-                                                                Image("add_btn")
-                                                                    .resizable()
-                                                                    .scaledToFit()
-                                                                    .frame(width:15, height:15)
-                                                            }
-                                                        }.padding(.leading,2)
-                                                            .padding(.trailing, 11)
-                                                    }.padding(.bottom,15)
-                                                }
-                                            )
-                                        //.padding()
-                                    }
+                                                        NavigationLink{
+                                                            Banana()
+                                                        }label: {
+                                                            Image("add_btn")
+                                                                .resizable()
+                                                                .scaledToFit()
+                                                                .frame(width:15, height:15)
+                                                        }
+                                                    }.padding(.leading,2)
+                                                        .padding(.trailing, 11)
+                                                }.padding(.bottom,15)
+                                            }
+                                        )
+                                    //.padding()
+                                }
                                 
-                               ProductCell(imageName: "banana", title: "Organic Bananas", quantity: "7pcs, Price/g", price: "$4.99")
+                                ProductCell(imageName: "banana", title: "Organic Bananas", quantity: "7pcs, Price/g", price: "$4.99")
                                 
                             }//HStack ends
                         }//ScrollView ends
@@ -229,7 +230,7 @@ struct HomeView: View {
                                     RoundedRectangle(cornerRadius: 25)
                                         .fill(Color.black.opacity(0.3))
                                         .frame(width: 152, height: 227)
-                                   
+                                    
                                     RoundedRectangle(cornerRadius: 25)
                                         .fill(Color.white)
                                         .frame(width: 150, height: 225)
@@ -270,7 +271,7 @@ struct HomeView: View {
                                                         //.overlay(
                                                         
                                                         NavigationLink{
-                                                           BellPepperRed()
+                                                            BellPepperRed()
                                                         }label: {
                                                             Image("add_btn")
                                                                 .resizable()
@@ -331,7 +332,7 @@ struct HomeView: View {
                                                         //.overlay(
                                                         
                                                         NavigationLink{
-                                                           Ginger()
+                                                            Ginger()
                                                         }label: {
                                                             Image("add_btn")
                                                                 .resizable()
@@ -419,15 +420,15 @@ struct HomeView: View {
                             //
                         }label: {
                             Text("See all")
-                           
+                            
                                 .foregroundColor(.green)
                                 .padding(.trailing, 10)
-                           
+                            
                         }}
                     ScrollView(.horizontal,showsIndicators:false){
                         
                         HStack{
-                           
+                            
                             RoundedRectangle(cornerRadius: 25)
                                 .fill(Color.orange.opacity(0.1))
                                 .frame(width: 227, height: 110)
@@ -444,7 +445,7 @@ struct HomeView: View {
                                             .fontWeight(.bold)
                                         
                                         
-                                      
+                                        
                                     })
                             
                             //
@@ -465,7 +466,7 @@ struct HomeView: View {
                                             .fontWeight(.bold)
                                         
                                         
-                                      
+                                        
                                     })
                             
                         }}
@@ -644,7 +645,7 @@ struct HomeView: View {
                                                     RoundedRectangle(cornerRadius: 12)
                                                         .fill(Color.green)
                                                         .frame(width: 35, height: 35)
-                                                  
+                                                    
                                                     NavigationLink{
                                                         EggChickenRed()
                                                     }label: {
@@ -731,32 +732,43 @@ struct HomeView: View {
                 }//Vertical ScrollView ends
                 
                 Spacer()
-                HStack{
-                    //TabButton(title: "Shop", icon: "storefront", isSelect: true) {
-                    // print("Shop tapped")
-                    
-                    TabButton(title: "Shop", icon: "storefront", isSelect: true) {
-                        print("Shop tapped")}
-                    
-                    TabButton(title: "Explore", icon: "explorefront", isSelect: true) {
-                        print("Explore tapped")}
-                        
-                    TabButton(title: "Cart", icon: "cart_tab", isSelect: true) {
-                        print("Cart tapped")}
-                    
-                    TabButton(title: "Favourite", icon: "favouritefront", isSelect: true) {
-                        print("Favourite tapped")}
-                    TabButton(title: "Account", icon: "account_tab", isSelect: true) {
-                        print("Account tapped")}
-                    
-                    
-                }
-                //.padding(.top, 5)
-                .padding(.bottom, .bottomInsets)
-                .padding(.horizontal, 10)
-                .background(Color.white)
-                .cornerRadius(15)
-                .shadow(color: Color.black.opacity(0.15), radius: 3, x: 0, y: -2)
+                  /* HStack{
+                 //TabButton(title: "Shop", icon: "storefront", isSelect: true) {
+                 // print("Shop tapped")
+                 
+                       TabButton(title: "Shop", icon: "storefront", isSelect: true) {
+                           print("Shop tapped")
+                           
+                       }
+                       
+                       TabButton(title: "Explore", icon: "magnifyingglass", isSelect: true) {
+                           print("Shop tapped")
+                           
+                       }
+                       
+                       TabButton(title: "Cart", icon: "cart", isSelect: true) {
+                           print("Shop tapped")
+                           
+                       }
+                       
+                       TabButton(title: "Favorite", icon: "heart", isSelect: true) {
+                           print("Shop tapped")
+                           
+                       }
+                       
+                       TabButton(title: "Account", icon: "person", isSelect: true) {
+                           print("Shop tapped")
+                           
+                       }
+                 
+                 }
+                 //.padding(.top, 5)
+                 .padding(.bottom, .bottomInsets)
+                 .padding(.horizontal, 10)
+                 .background(Color.white)
+                 .cornerRadius(15)
+                 .shadow(color: Color.black.opacity(0.15), radius: 3, x: 0, y: -2)*/
+                 //}
             }
         }
         }

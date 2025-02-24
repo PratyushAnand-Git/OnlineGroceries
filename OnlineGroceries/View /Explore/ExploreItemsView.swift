@@ -7,18 +7,23 @@
 
 import SwiftUI
 
-struct ExploreItemsView<Destination: View>: View {
+struct ExploreItemsView: View {
     var image: String
     var text: String
     var baseColor: Color
-    var navigateTo: Destination
+    var navigateTo: AnyView 
     
     var body: some View {
         NavigationLink(destination: navigateTo){
             ZStack{
-                RoundedRectangle(cornerRadius: 25)
+                NavigationLink(destination: navigateTo){
+                
+                    RoundedRectangle(cornerRadius: 25)
                     .fill(baseColor)
                     .frame(width: 170, height: 196)
+                    .overlay(
+                
+                
                 
                 RoundedRectangle(cornerRadius: 25)
                     .fill(Color.white.opacity(0.9))
@@ -41,8 +46,9 @@ struct ExploreItemsView<Destination: View>: View {
                                 .font(.title)
                                 .padding(.bottom,20)
                         }
-                    )
+                    ))
                 //.padding()
+            }
             }//ZS
         }
         
@@ -50,17 +56,17 @@ struct ExploreItemsView<Destination: View>: View {
 }
 
 // BlankView that conforms to the View protocol
-struct BlankView: View {
+/*struct BlankView: View {
     var body: some View {
         Text("This is a blank view")
             .onAppear {
                 print("Navigated to BlankView")
             }
     }
-}
+}*/
 
 // Example usage of ExploreItemsView with BlankView as the destination
-struct ContentView: View {
+/*struct ContentView: View {
     var body: some View {
         NavigationView {
             ExploreItemsView(
@@ -72,13 +78,13 @@ struct ContentView: View {
             .navigationTitle("Explore Items")
         }
     }
-}
+}*/
 
 #Preview {
     ExploreItemsView(
         image: "frash_fruits",  // Replace with a valid image name
         text: "Fresh Fruits & Vegetables",  // Replace with any text you want
         baseColor: .green,  // You can customize the base color here
-        navigateTo: BlankView()
+        navigateTo: AnyView(BlankView())
     )
 }

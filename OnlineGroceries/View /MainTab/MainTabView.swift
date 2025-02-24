@@ -15,9 +15,9 @@ struct MainTabView: View {
         ZStack{
             
             if(homeVM.selectTab == 0) {
-                // HomeView()
+                HomeView()
             }else if(homeVM.selectTab == 1) {
-                //ExploreView()
+                ExploreView()
             }else if(homeVM.selectTab == 2) {
                 //MyCartView()
             }else if(homeVM.selectTab == 3) {
@@ -31,7 +31,7 @@ struct MainTabView: View {
                 Spacer()
                 
                 HStack{
-                    TabButton(title: "Shop", icon:"store_tab", isSelect: homeVM.selectTab == 0){
+                    TabButton(title: "Shop", icon:"storefront", isSelect: homeVM.selectTab == 0){
                         print("Button Tab")
                         
                         DispatchQueue.main.async {
@@ -43,7 +43,7 @@ struct MainTabView: View {
                         
                     }
                     
-                    TabButton(title: "Explore", icon: "explore_tab", isSelect: homeVM.selectTab == 1){
+                    TabButton(title: "Explore", icon: "magnifyingglass", isSelect: homeVM.selectTab == 1){
                         print("Button Tab")
                         
                         DispatchQueue.main.async {
@@ -53,7 +53,7 @@ struct MainTabView: View {
                             }
                         }
                    }
-                    TabButton(title: "Cart", icon: "cart_tab", isSelect: homeVM.selectTab == 2){
+                    TabButton(title: "Cart", icon: "cart", isSelect: homeVM.selectTab == 2){
                         print("Button Tab")
                         
                         DispatchQueue.main.async {
@@ -64,7 +64,7 @@ struct MainTabView: View {
                         }
                     }
                     
-                    TabButton(title: "Favourite", icon: "fav_tab", isSelect: homeVM.selectTab == 3){
+                    TabButton(title: "Favourite", icon: "heart", isSelect: homeVM.selectTab == 3){
                         print("Button Tab")
                         
                         DispatchQueue.main.async {
@@ -75,7 +75,7 @@ struct MainTabView: View {
                         }
                     }
                     
-                    TabButton(title: "Account", icon: "account_tab", isSelect: homeVM.selectTab == 4){
+                    TabButton(title: "Account", icon: "person", isSelect: homeVM.selectTab == 4){
                         print("Button Tab")
                         
                         DispatchQueue.main.async {
@@ -109,3 +109,4 @@ struct MainTabView: View {
             
         }
     }
+

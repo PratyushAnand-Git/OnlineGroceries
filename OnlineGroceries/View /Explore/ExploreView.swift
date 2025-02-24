@@ -9,10 +9,6 @@ import SwiftUI
 
 struct ExploreView: View {
     @State private var searchText = ""
-    var image: String
-    var text: String
-    var baseColor: Color
-    
     var body: some View {
         VStack{
             Text("Find Products")
@@ -31,14 +27,14 @@ struct ExploreView: View {
                             image: "frash_fruits",
                             text: "Fresh Fruits & Vegetables",
                             baseColor: .green,
-                            navigateTo: BlankView()
+                            navigateTo: AnyView(BlankView())
                         )
                         //Spacer()
                         ExploreItemsView(
                             image: "cooking_oil",
                             text: "Cooking Oil \n   & Ghee",
                             baseColor: .orange,
-                            navigateTo: BlankView()
+                            navigateTo: AnyView(BlankView())
                         )
                         
                     }//.padding(.horizontal,20)
@@ -49,14 +45,14 @@ struct ExploreView: View {
                             image: "meat_fish",
                             text: "Meat & Fish",
                             baseColor: .red,
-                            navigateTo: BlankView()
+                            navigateTo: AnyView(BlankView())
                         )
                         //Spacer()
                         ExploreItemsView(
                             image: "frash_fruits",
                             text: "Bakery & Snacks",
                             baseColor: .indigo,
-                            navigateTo: BlankView()
+                            navigateTo: AnyView(BlankView())
                         )
                         
                     }//.padding(.horizontal,20)
@@ -66,14 +62,14 @@ struct ExploreView: View {
                             image: "dairy_eggs",
                             text: "Dairy & Eggs",
                             baseColor: .orange,
-                            navigateTo: BlankView()
+                            navigateTo: AnyView(BlankView())
                         )
                         //Spacer()
                         ExploreItemsView(
                             image: "beverages",
-                            text: "Bevrages",
+                            text: "Beverages",
                             baseColor: .blue,
-                            navigateTo: BlankView()
+                            navigateTo: AnyView(BeveragesView())
                         )
                         
                     }//.padding(.horizontal,20)
@@ -83,14 +79,14 @@ struct ExploreView: View {
                             image: "frash_fruits",
                             text: "Dairy & Eggs",
                             baseColor: .orange,
-                            navigateTo: BlankView()
+                            navigateTo: AnyView(BlankView())
                         )
                         //Spacer()
                         ExploreItemsView(
                             image: "frash_fruits",
-                            text: "Bevrages",
+                            text: "Beverages",
                             baseColor: .blue,
-                            navigateTo: BlankView()
+                            navigateTo: AnyView(BlankView())
                         )
                         
                     }//.padding(.horizontal,20)
@@ -114,9 +110,5 @@ struct ExploreView: View {
 }
 
 #Preview {
-    ExploreView(
-        image: "frash_fruits",  // Replace with a valid image name
-        text: "Fresh Fruits & Vegetables",  // Replace with any text you want
-        baseColor: .green  // You can customize the base color here
-    )
+    ExploreView()
 }

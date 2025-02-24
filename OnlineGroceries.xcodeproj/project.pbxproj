@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0DDF382D6CA74600A21CAC /* BlankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DDF372D6CA74600A21CAC /* BlankView.swift */; };
 		3F3BEE932D6360500046ADE3 /* ContentBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3BEE922D6360500046ADE3 /* ContentBar.swift */; };
 		3F55B55A2D673CDE00AABBD1 /* ProductCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55B5592D673CDE00AABBD1 /* ProductCustomCell.swift */; };
 		3F9E41732D4D026400A38933 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9E41722D4D026400A38933 /* Launch Screen.storyboard */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F0DDF372D6CA74600A21CAC /* BlankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankView.swift; sourceTree = "<group>"; };
 		3F3BEE922D6360500046ADE3 /* ContentBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBar.swift; sourceTree = "<group>"; };
 		3F55B5592D673CDE00AABBD1 /* ProductCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCustomCell.swift; sourceTree = "<group>"; };
 		3F9E41722D4D026400A38933 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				3FD9E12B2D5B8F88008607F7 /* Home */,
 				3F44164C2D53942B00F20FC1 /* MainTab */,
 				3FF04A062D44F73100A44516 /* Login */,
+				3F0DDF372D6CA74600A21CAC /* BlankView.swift */,
 			);
 			path = "View ";
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				3F3BEE932D6360500046ADE3 /* ContentBar.swift in Sources */,
 				3FF049EB2D44F5C000A44516 /* BackButton.swift in Sources */,
 				3FF049EA2D44F5C000A44516 /* Globs.swift in Sources */,
+				3F0DDF382D6CA74600A21CAC /* BlankView.swift in Sources */,
 				3FDE4EB22D64C4090075AE5D /* StarRatingView.swift in Sources */,
 				3FF049662D44EFCB00A44516 /* WelcomeView.swift in Sources */,
 				3FF049F02D44F5C000A44516 /* SearchTextField.swift in Sources */,
