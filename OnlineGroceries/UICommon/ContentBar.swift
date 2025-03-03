@@ -4,7 +4,6 @@ struct ContentBar: View {
     @State private var quantity: Int = 1
     let pricePerItem: Double = 4.99
     
-    
     var body: some View {
         HStack{
             HStack{
@@ -45,14 +44,14 @@ struct ContentBar: View {
                 
                 
                 Spacer()
-            }//.padding(.horizontal)
+            }//.padding(.horizontal)//HStack
            
             
             Text(String(format: "$%.2f", totalPrice))
                 .font(.title)
                 .foregroundColor(.black)
                 //.padding(.trailing,20)
-        }
+        }//HStack
         //.padding()
         .padding(.horizontal)
     }
