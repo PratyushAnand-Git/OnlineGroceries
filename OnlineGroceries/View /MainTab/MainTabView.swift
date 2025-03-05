@@ -21,7 +21,7 @@ struct MainTabView: View {
             }else if(homeVM.selectTab == 2) {
                 MyCartView()
             }else if(homeVM.selectTab == 3) {
-                //FavouriteView()
+                FavouriteView()
             }else if(homeVM.selectTab == 4) {
                 // AccountView()
             }
