@@ -91,12 +91,8 @@ struct SignUpView: View {
                         .padding(.leading,-82)
                         
                         NavigationLink{
-                           HomeView()
-                        }label:
-                        /*Button(action: {
-                            showAlert = true
-                        }) */
-                        {
+                           MainTabView()
+                        }label: {
                             Text("Sign Up")
                                 .font(.customfont(.medium, fontSize: 20))
                                 .padding()

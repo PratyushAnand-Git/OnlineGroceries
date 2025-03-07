@@ -19,11 +19,11 @@ struct ProductCustomCell: View {
             ZStack{
                 RoundedRectangle(cornerRadius: 25)
                     .fill(Color.black.opacity(0.3))
-                    .frame(width: 177, height: 252)
+                    .frame(width: 152, height: 227)
                 
                 RoundedRectangle(cornerRadius: 25)
                     .fill(Color.white)
-                    .frame(width: 175, height: 250)
+                    .frame(width: 150, height: 225)
                     .overlay(
                         VStack{Spacer()
                             Image(image)

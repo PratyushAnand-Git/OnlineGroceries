@@ -61,7 +61,7 @@ struct LoginView: View {
                     //showError = true
                 })*/
                 NavigationLink{
-                   HomeView()
+                   MainTabView()
                 }label: {
                     Text("Log In")
                 }.font(.customfont(.medium, fontSize: 20))
