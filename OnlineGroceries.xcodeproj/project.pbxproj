@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2C82FD2D7D552B000969A9 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2C82FC2D7D552B000969A9 /* RoundButton.swift */; };
 		3F3BEE932D6360500046ADE3 /* ContentBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3BEE922D6360500046ADE3 /* ContentBar.swift */; };
 		3F55B55A2D673CDE00AABBD1 /* ProductCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55B5592D673CDE00AABBD1 /* ProductCustomCell.swift */; };
 		3F9E41732D4D026400A38933 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9E41722D4D026400A38933 /* Launch Screen.storyboard */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F2C82FC2D7D552B000969A9 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		3F3BEE922D6360500046ADE3 /* ContentBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBar.swift; sourceTree = "<group>"; };
 		3F55B5592D673CDE00AABBD1 /* ProductCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCustomCell.swift; sourceTree = "<group>"; };
 		3F9E41722D4D026400A38933 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -85,6 +87,9 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Account/AcccountView.swift,
+				Login/ForgotPasswordSetView.swift,
+				Login/ForgotPasswordView.swift,
+				Login/OTPView.swift,
 			);
 			target = 3FF0496F2D44EFCC00A44516 /* OnlineGroceriesTests */;
 		};
@@ -164,6 +169,7 @@
 		3FF049622D44EFCB00A44516 /* OnlineGroceries */ = {
 			isa = PBXGroup;
 			children = (
+				3F1B2D822D79C0C2003DE48C /* View  */,
 				3FCEC60E2D52057B002B4F08 /* ViewModel */,
 				3FCEC6072D5203C3002B4F08 /* Custom Collection */,
 				3FCEC6042D5202CC002B4F08 /* Model */,
@@ -187,7 +193,6 @@
 		3FF049732D44EFCC00A44516 /* OnlineGroceriesTests */ = {
 			isa = PBXGroup;
 			children = (
-				3F1B2D822D79C0C2003DE48C /* View  */,
 				3FF049742D44EFCC00A44516 /* OnlineGroceriesTests.swift */,
 			);
 			path = OnlineGroceriesTests;
@@ -221,6 +226,7 @@
 				3FDE4EB12D64C4090075AE5D /* StarRatingView.swift */,
 				3FB08B1C2D66169A00C21EB2 /* HeartButton.swift */,
 				3F55B5592D673CDE00AABBD1 /* ProductCustomCell.swift */,
+				3F2C82FC2D7D552B000969A9 /* RoundButton.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -381,6 +387,7 @@
 				3FF049ED2D44F5C000A44516 /* LineTextField.swift in Sources */,
 				3FF049E82D44F5C000A44516 /* TabButton.swift in Sources */,
 				3F3BEE932D6360500046ADE3 /* ContentBar.swift in Sources */,
+				3F2C82FD2D7D552B000969A9 /* RoundButton.swift in Sources */,
 				3FF049EB2D44F5C000A44516 /* BackButton.swift in Sources */,
 				3FF049EA2D44F5C000A44516 /* Globs.swift in Sources */,
 				3FDE4EB22D64C4090075AE5D /* StarRatingView.swift in Sources */,

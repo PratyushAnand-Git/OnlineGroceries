@@ -723,7 +723,8 @@ struct HomeView: View {
                                         }
                                     )
                                 //.padding()
-                            } }
+                            }
+                        }.padding(.bottom , 90)
                         
                         
                         

@@ -70,7 +70,7 @@ struct SignInView: View {
                         .padding(.bottom, 25)
                     
                     NavigationLink {
-                        LoginView()
+                        OTPView() //LoginView()
                     } label: {
                         Text("Continue with SignIn")
                             .font(.customfont(.semibold, fontSize: 18))

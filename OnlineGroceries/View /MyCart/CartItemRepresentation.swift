@@ -1,10 +1,3 @@
-//
-//  CartItemRepresentation.swift
-//  OnlineGroceries
-//
-//  Created by student on 03/03/25.
-//
-
 import SwiftUI
 
 struct CartItemRepresentation: View {

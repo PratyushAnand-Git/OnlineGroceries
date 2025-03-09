@@ -49,6 +49,14 @@ struct SignUpView: View {
                         LineSecureField(title: "Password", placholder: "Enter your password", txt: .constant(""), isShowPassword: .constant(false))
                             .padding(.bottom, .screenWidth * 0.02)
                         
+                        NavigationLink(destination: ForgotPasswordView()) {
+                            Text("Forgot Password?")
+                                .font(.customfont(.medium, fontSize: 14))
+                                .foregroundColor(.green.opacity(0.9))
+                                //.multilineTextAlignment(.leading)
+                                .padding(.trailing, 250)
+                        }
+                        Spacer()
                         HStack{
                             Text("By continuing you agree to our")
                                 .font(.customfont(.medium, fontSize: 14))
