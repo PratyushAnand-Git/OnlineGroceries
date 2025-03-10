@@ -47,7 +47,7 @@ struct LoginView: View {
                 
                 // Forgot Password Link
                 NavigationLink {
-                    // ForgotPasswordView()
+                    ForgotPasswordView()
                 } label: {
                     Text("Forgot Password?")
                         .font(.customfont(.medium, fontSize: 14))

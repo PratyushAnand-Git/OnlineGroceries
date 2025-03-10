@@ -10,28 +10,39 @@ import SwiftUI
 struct errorView: View {
     var body: some View {
         ZStack{
-            Color.white
-                .edgesIgnoringSafeArea(.all)
+           //Color.white
+               // .edgesIgnoringSafeArea(.all)
             
             VStack{
+                NavigationLink{
+                    
+                } label:{
+                    Image("close")
+                        .resizable()
+                        .frame(width:15, height: 15)
+                        .padding(.trailing, 270)
+                }
                 Spacer()
                 
                 VStack(spacing: 20){
-                    Image(systemName: "bag")
+                    Image("order_fail")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 100, height: 100)
+                        .frame(width: 200, height: 200)
                         .foregroundColor(.gray)
                     
                     Text("Oops! Order Failed")
                         .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(.gray)
+                        //.fontWeight(.bold)
+                        .foregroundColor(.black)
+                        .font(.customfont(.bold, fontSize: 18))
                     
                     Text("Something went terribly wrong.")
                         .font(.body)
                         .foregroundColor(.gray)
                         .multilineTextAlignment(.center)
+                    
+                    Spacer()
                     
                     Button(action: {
                         
@@ -41,9 +52,9 @@ struct errorView: View {
                             .fontWeight(.bold)
                             .padding()
                             .frame(maxWidth: .infinity)
-                            .background(Color.blue)
+                            .background(Color.green)
                             .foregroundColor(.white)
-                            .cornerRadius(10)
+                            .cornerRadius(15)
                     }
                     
                     Button(action: {
@@ -54,8 +65,8 @@ struct errorView: View {
                             .fontWeight(.bold)
                             .padding()
                             .frame(maxWidth: .infinity)
-                            .background(Color.gray.opacity(0.3))
-                            .foregroundColor(.blue)
+                            //.background(Color.gray.opacity(0.3))
+                            .foregroundColor(.black)
                             .cornerRadius(10)
                     }
                     //            RoundedRectangle(cornerRadius: 10)
@@ -73,8 +84,10 @@ struct errorView: View {
                 .padding()
                 .background(Color.white)
                 .cornerRadius(20)
-                .shadow(radius:10)
-                .padding(.horizontal, 20)
+                //.shadow(radius:10)
+                .padding(.horizontal, 40)
+                .padding(.vertical,500)
+                .shadow(color: Color.black.opacity(0.9), radius: 100, x: 0, y: 0)
                 
                 Spacer()
             }}
