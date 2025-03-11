@@ -72,10 +72,9 @@ struct AccountView: View {
                 }
                 .listStyle(PlainListStyle())
 
-                Button(action: {
-                    print("Log Out Tapped!")
-                    // Add logout logic here
-                }) {
+                NavigationLink{
+                   // LogInView()
+                }label: {
                     RoundedRectangle(cornerRadius: 20)
                         .frame(width: 350, height: 70)
                         .foregroundColor(.black.opacity(0.1))

@@ -27,6 +27,8 @@ class ForgotPasswordViewModel: ObservableObject
     @Published var showError = false
     @Published var errorMessage = ""
     
+    //@Published var txtCode: String = ""
+    
    
     var resetObj: NSDictionary?
     
